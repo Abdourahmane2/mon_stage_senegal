@@ -1,0 +1,23 @@
+===== Anomalie 1 =====
+# 5 agents ont une anomalie de date de recrutement. leur date de recrutement est supérieure à leur date de prise de service.
+
+
+===== Anomalie 2 =====
+tous les agents ont une date de retraite valide (ceci n'est pas une anomalie !!!)
+
+
+===== Anomalie 3 =====
+Tous les agents ont une date de fin de fonction valide (ceci n'est pas une anomalie !!!)
+
+
+===== Anomalie 4 =====
+Aucun doublon dans le fichier.
+# 1 numéros d'employé en double trouvés dans le fichier.
+
+
+===== Anomalie 5 =====
+# 2 agents ont un age anomale (soit inférieur à 18 ans soit supérieur à 68 ans).
+# 17 agents ont un nombre d'enfants anomale (soit inférieur à 0 soit supérieur à 10).
+# 2 agents ont un nombre d'épouses anomale (soit inférieur à 0 soit supérieur à 4).
+
+

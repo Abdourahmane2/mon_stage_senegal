@@ -1,0 +1,343 @@
+===== liste des anomalies pour le fichier  C:/Users/HP/Desktop/mon_stage_senegal/data/Etudiants_2001_2024/Liste_globale_des_etudiants_tous_les_champs20012002.csv =====
+
+===== Anomalie 1 =====
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 29094 entries, 0 to 29093
+Data columns (total 32 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   NUMERO                   29094 non-null  object 
+ 1   NUMERO_TABLE             0 non-null      float64
+ 2   INE                      1913 non-null   object 
+ 3   NUMERO_IDENTITIFICATION  29094 non-null  object 
+ 4   NOM                      29094 non-null  object 
+ 5   PRENOM                   29094 non-null  object 
+ 6   DATE_DE_NAISSANCE        29094 non-null  object 
+ 7   LIEU_DE_NAISSANCE        28990 non-null  object 
+ 8   MAIL_INSTITUTIONNEL      3444 non-null   object 
+ 9   SEXE                     29094 non-null  object 
+ 10  MENTION_BACC             28760 non-null  object 
+ 11  ANNEE_BACC               28815 non-null  float64
+ 12  PAYS_DE_NAISSANCE        29094 non-null  object 
+ 13  NATIONALITE              29094 non-null  object 
+ 14  SERIE_BACC               28659 non-null  object 
+ 15  REGION_DE_NAISSANCE      18560 non-null  object 
+ 16  ETABLISSMENT_CODE        29094 non-null  object 
+ 17  ETABLISSEMENT            29094 non-null  object 
+ 18  NIVEAU_SECTION           29094 non-null  object 
+ 19  SIGLE_NIVEAU_SECTION     29094 non-null  object 
+ 20  COHORTE                  2356 non-null   object 
+ 21  ETAT_INSCRIPTION         29094 non-null  object 
+ 22  ANNEE_INSCRIPTION        29094 non-null  int64  
+ 23  ANNEE_UNIVERSITAIRE      29094 non-null  object 
+ 24  TYPE_FORMATION           29094 non-null  object 
+ 25  CODE_NIVEAU              29094 non-null  int64  
+ 26  NIVEAU                   29094 non-null  object 
+ 27  DATE_INSCRIPTION         29094 non-null  object 
+ 28  NIVEAU LMD               19235 non-null  object 
+ 29  NIVEAU LMD ET NON LMD    29094 non-null  object 
+ 30  SYSTEME                  29094 non-null  object 
+ 31  DEPARTEMENT FORMATION    29094 non-null  object 
+dtypes: float64(2), int64(2), object(28)
+memory usage: 7.1+ MB
+il y'a 29094 lignes et 32 colonnes.
+
+
+===== Anomalie 2 =====
+il y'a 19235 personnes avec un systeme lmd inscrit inscrit avant 2011  .
+les niveaux de formation sont : ['Deuxième Année Maîtrise en Sciences de Gestion'
+ 'Première Année du Certificat Préparatoire aux Etudes de Gestion (I.F.A.C.E.)'
+ "Maîtrise d'Anglais" 'Maîtrise de Sociologie'
+ 'Maîtrise de Lettres Classiques' "Maîtrise d'Espagnol"
+ "Deuxième Année du Diplôme Universitaire d'Etudes Littéraires Section Anglais"
+ "Deuxième Année du Diplôme Universitaire d'Etudes Littéraires Section Portugais"
+ 'Maîtrise de Philosophie'
+ "Deuxième Année du Diplôme Universitaire d'Etudes Littéraires Section Philosophie"
+ 'Première Année du DEUG en Sciences Juridiques'
+ "Deuxième Année du Diplôme Universitaire d'Etudes Littéraires Section Histoire"
+ "Deuxième Année du Diplôme Universitaire d'Etudes Littéraires Section Géographie"
+ 'Quatrième Année du Deuxième Cycle des Etudes Médicales'
+ "Quatrième Année du Certificat d'Etudes Spéciales de Psychiatrie"
+ "Quatrième Année du Certificat d'Etudes Spéciales d'Ophtalmologie"
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Lettres Modernes"
+ 'Deuxième Année du DEUG en Sciences Juridiques'
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Anglais"
+ "Attestation d'Etudes Approfondies d'Energie Solaire"
+ "Attestation d'Etudes Approfondies de Mathématiques Appliquées"
+ 'Thèse de Troisième Cycle Hydrogéologie'
+ "Deuxième Année du Diplôme Universitaire d'Etudes Scientifiques de Physique et Chimie"
+ "Maîtrise en Science de l'Information et de la Communication"
+ "Deuxième Année du Diplôme Universitaire d'Etudes Scientifiques de Sciences Naturelles"
+ 'Première Année du DEUG de Sciences Economiques'
+ "Première Année du Diplôme Universitaire d'Etudes Scientifiques de Sciences Naturelles"
+ "Deuxième Année du Diplôme Universitaire d'Etudes Scientifiques de Mathématiques et Physique"
+ "Deuxième Année du D.E.U.G. en Sciences et Techniques de l'Activité Physique et du Sport"
+ "Deuxième Année du Diplôme Universitaire d'Etudes Littéraires Section Lettres Classiques"
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Portugais"
+ "Première Année du Diplôme Universitaire d'Etudes Scientifiques de Physique et Chimie"
+ "2e Année du Diplôme Supérieur en Sciences de l'Information et de la Communication opt. : Doc."
+ "Deuxième Année du Diplôme Universitaire d'Etudes Littéraires Section Espagnol"
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Histoire"
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Philosophie"
+ "Deuxième Année du Diplôme Universitaire d'Etudes Littéraires Section Arabe"
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Espagnol"
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Arabe"
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Géographie"
+ "Deuxième Année du Certificat d'Aptitude aux fonctions d'Inspecteur de l'Education Préscolaire"
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Allemand"
+ "Troisième Année du Certificat d'Etudes Spéciales de Psychiatrie"
+ "Deuxième Année du Diplôme Universitaire d'Etudes Littéraires Section Italien"
+ 'Maîtrise en Sciences de Gestion'
+ "Deuxième Année du Diplôme Universitaire d'Etudes Littéraires Section Sociologie"
+ 'Première Année Maîtrise en Sciences de Gestion'
+ "Première Année du Diplôme d'Aptitude aux Fonctions de Documentaliste"
+ "Première Année du Diplôme Universitaire d'Etudes Scientifiques de Mathématiques et Physique"
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Russe"
+ "Première Année du Diplôme d'Aptitude aux Fonctions d'Archivistes"
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Sociologie"
+ "1ère Année Diplôme d'Etudes Approfondies du Programme de Troisième Cycle Inter-Universitaire"
+ "Première Année du Certificat d'Etudes Spéciales de Pédiatrie"
+ "Diplôme d'Etudes Approfondies de Sociologie"
+ "Deuxième Année du Certificat d'Etudes Spéciales de Cardiologie"
+ 'D.E.S.S. Audit Financier Fiscal et Comptable des Entreprises (I.F.A.C.E.)'
+ "Diplôme d'Etudes Approfondies Droit Privé"
+ "Diplôme d'Etudes Approfondies d'Anglais"
+ "Première Année du Certificat d'Etudes Spéciales d'Anesthésie Réanimation"
+ "2ème Année Diplôme d'Etudes Approfondies du Programme de Troisième Cycle Inter-Universitaire"
+ "Deuxième Année du Diplôme Universitaire d'Etudes Littéraires Section Russe"
+ "Quatrième Année du Certificat d'Etudes Spéciales de Cardiologie"
+ "Deuxième Année Certif d'Aptit aux Fonct d'Insp de l'Education Populaire, de la Jeunesse et Sports"
+ 'Maîtrise de Lettres Modernes'
+ "Troisième Année du Certificat d'Etudes Spéciales de Medecine Interne"
+ "Doctorat d'Etat Sciences Economiques" 'Maîtrise de Géographie'
+ "Diplôme d'Etudes Approfondies de Lettres Modernes"
+ "Diplôme d'Etudes Approfondies de Philosophie" "Maîtrise d'Histoire"
+ "Deuxième Année du Certificat d'Etudes Spéciales de Dermatologie - Vénérologie"
+ 'Première Année du Deuxième Cycle des Etudes Pharmaceutiques'
+ "Quatrième Année du Certificat d'Etudes Spéciales de Pédiatrie"
+ "Diplôme d'Etudes Approfondies Intégration" 'Maîtrise Droit Public'
+ "Diplôme d'Etudes Approfondies Sciences Politiques"
+ "Maîtrise Sciences et Techniques de l'Activité Physique et du Sport"
+ "Attestation d'Etudes Approfondies de Chimie Physique Appliquée à l'Energie"
+ "Deuxième Année du Diplôme d'Aptitude aux Fonctions de Bibliothécaire"
+ "Deuxième Année du Certificat d'Etudes Spéciales d'Urologie"
+ "Deuxième Année du Certificat d'Etudes Spéciales de Gynécologie - Obstétrique (Probatoire)"
+ "Deuxième Année du Diplôme d'Aptitude aux Fonctions de Documentaliste"
+ 'Maîtrise Informatique' "Thèse d'Etat Biologie végétale"
+ "Diplôme d'Etudes Approfondies Droit Public"
+ "Diplôme d'Etudes Approfondies de Portugais"
+ 'D.E.S.S. de Finances (I.F.A.C.E.)'
+ "Deuxième Année du Certificat d'Etudes Spéciales de Neurologie"
+ 'Maîtrise de Portugais'
+ "Deuxième Année du Certificat d'Etudes Spéciales de Medecine du Travail"
+ "Deuxième Année du Certificat d'Etudes Spéciales Orthopédie Traumatologie"
+ "Quatrième Année du Certificat d'Etudes Spéciales d'Anesthésie Réanimation"
+ "Certificat d'Etudes Spéciales de Contrôle des Médicaments et des Aliments"
+ "Troisième Année du Certificat d'Etudes Spéciales de Gynécologie - Obstétrique (Probatoire)"
+ "Diplôme d'Etudes Approfondies de Géographie Chaire UNESCO"
+ "Attestation d'Etudes Approfondies d'Environnement" "Maîtrise d'Allemand"
+ "Certificat d'Etudes Spéciales de Bactériologie - Virologie"
+ "Maîtrise d'Arabe"
+ 'D.E.S.S. Certificat en Administration des Entreprises (I.F.A.C.E.)'
+ "Certificat d'Etudes Spéciales de Parasitologie"
+ "Deuxième Année du Certificat d'Etudes Spéciales de Cancérologie"
+ "Diplôme d'Etudes Approfondies de Géographie"
+ "Deuxième Année du Diplôme Universitaire d'Etudes Littéraires Section Allemand"
+ "Première Année du D.E.U.G. en Sciences et Techniques de l'Activité Physique et du Sport"
+ "Troisième Année du Certificat d'Etudes Spéciales de Chirurgie Générale"
+ "Attestation d'Etudes Approfondies de Géosciences option Environnements Sédimentaires"
+ "Thèse d'Etat Chimie et Biochimie des Produits Naturels"
+ "2e Année du Diplôme Supérieur en Sciences de l'Information et de la Communication opt. : Arch."
+ 'Thèse Transferts Thermiques et Systèmes Energétiques'
+ "Deuxième Année du Certificat d'Etudes Spéciales de Maladies Infectieuses"
+ "Diplôme d'Etudes Approfondies d'Arabe"
+ "Certificat d'Etudes Spéciales de Biochimie"
+ "Première Année du Certificat d'Etudes Spéciales de Cardiologie"
+ "Troisième Année du Certificat d'Etudes Spéciales d'Anesthésie Réanimation"
+ "Deuxième Année du Diplôme d'Aptitude aux Fonctions d'Archiviste"
+ "Première Année Certif d'Aptit aux Fonct d'Inspec de l'Education Populaire, de la Jeunesse et Sports"
+ "2e Année du Diplôme Supérieur en Sciences de l'Information et de la Communication opt. : Bib."
+ "Deuxième Année du Diplôme d'Ingénieur Technologue en Génie Sanitaire"
+ "Diplôme d'Etudes Approfondies en Sciences de l'Education"
+ "Deuxième Année du Certificat d'Etudes Spéciales d'Oto-Rhino-Laryngologie"
+ "Première Année du Diplôme d'Aptitude aux Fonctions de Bibliothécaire"
+ "Première Année du Certificat d'Etudes Spéciales de Chirurgie Générale"
+ 'Thèse Génie Civil et Sciences des Matériaux'
+ "Certificat d'Etudes Spéciales de Léprologie"
+ "Diplôme d'Etudes Approfondies d'Histoire"
+ 'Thèse de Troisième Cycle Génie Electrique'
+ "Attestation d'Etudes Approfondies Physique Atomique et Nucléaire"
+ "Première Année du Certificat d'Etudes Spéciales de Medecine Interne"
+ "Attestation d'Etudes Approfondies de Biologie Végétale"
+ "Troisième Année du Certificat d'Etudes Spéciales d'Anatomie-Cytologie Pathologie"
+ "Quatrième Année du Certificat d'Etudes Spéciales d'Urologie"
+ "Troisième Année du Certificat d'Etudes Spéciales Orthopédie Traumatologie"
+ "Attestation d'Etudes Approfondies d'Algèbre Commutative"
+ "Troisième Année du Certificat d'Etudes Spéciales de Cardiologie"
+ 'Cinquième Année BS en Génie Electrique'
+ "Première Année du Certificat d'Etudes Spéciales de Gynécologie - Obstétrique (Probatoire)"
+ "Deuxième Année du Certificat d'Etudes Spéciales d'Anesthésie Réanimation"
+ "Troisième Année du Certificat d'Etudes Spéciales d'Ophtalmologie"
+ "Quatrième Année du Certificat d'Etudes Spéciales de Chirurgie Générale"
+ "1e Année du Diplôme Supérieur en Sciences de l'Information et de la Communication opt. : Arch."
+ "Diplôme d'Université de Medecine Tropicale Appliquée"
+ "Troisième Année du Certificat d'Etudes Spéciales de Dermatologie - Vénérologie"
+ "Première Année du Certificat d'Etudes Spéciales de Medecine du Travail"
+ "Certificat d'Etudes Spéciales d'Hématologie" 'Licence 3 Chimie'
+ "Première Année du Certificat d'Etudes Séciales Pneumologie"
+ "Quatrième Année du Certificat d'Etudes Spéciales de Neuro-Chirurgie"
+ "Troisième Année du Certificat d'Etudes Spéciales d'Oto-Rhino-Laryngologie"
+ "Thèse d'Etat Biologie Animale"
+ "Attestation d'Etudes Approfondies d'Informatique"
+ "Deuxième Année du Certificat d'Etudes Spéciales de Chirurgie Générale"
+ "Première Année du Certificat d'Etudes Spéciales d'Oto-Rhino-Laryngologie"
+ "Diplôme d'Etudes Approfondies Génie Civil et Sciences des Matériaux"
+ 'Thèse Météorologie et Gestion des Milieux Arides'
+ "Première Année du Certificat d'Etudes Spéciales de Psychiatrie"
+ 'Thèse de Troisième Cycle Physique' "Doctorat d'Etat option Espagnol"
+ "Attestation d'Etudes Approfondies de Physique Atomique et Nucléaire"
+ "Attestation d'Etudes Approfondies de Biologie Animale"
+ 'Maîtrise de Linguistique' "Maîtrise d'Italien"
+ "Deuxième Année du Certificat d'Etudes Spéciales d'Anatomie-Cytologie Pathologie"
+ "Première Année du Certificat d'Etudes Spéciales d'Ophtalmologie"
+ "Diplôme d'Etudes Approfondies Génie Electrique"
+ 'première année CES Cancérologie'
+ "Première Année du Certificat d'Etudes Spéciales de Neuro-Chirurgie"
+ "Diplôme d'Etudes Approfondies Nutrition et Alimentation"
+ "Deuxième Année du Certificat d'Etudes Spéciales de Neuro-Chirurgie"
+ 'Sixième Année de Techniques Quantitatives de Gestion'
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Lettres Classiques"
+ "Deuxième Année du Certificat d'Etudes Spéciales de Medecine Interne"
+ "Troisième Année du Certificat d'Etudes Spéciales de Pédiatrie"
+ "Première Année du Certificat d'Etudes Spéciales Orthopédie Traumatologie"
+ "Première Année du Certificat d'Etudes Spéciales de Dermatologie - Vénérologie"
+ "Attestation d'Etudes Approfondies de Géosciences option Zones Profondes"
+ "1e Année du Diplôme Supérieur en Sciences de l'Information et de la Communication opt. : Bib."
+ "Troisième Année du Certificat d'Etudes Spéciales Pneumologie"
+ "Diplôme d'Etudes Approfondies de Linguistique"
+ "Deuxième Année du Certificat d'Etudes Spéciales de Pédiatrie"
+ "Quatrième Année du Certificat d'Etudes Spéciales d'Oto-Rhino-Laryngologie"
+ "Diplôme d'Etudes Approfondies d'Italien"
+ "1e Année du Diplôme Supérieur en Sciences de l'Information et de la Communication opt. : Doc."
+ "Attestation d'Etudes Approfondies d'Hydrogéologie"
+ "Diplôme d'Etudes Approfondies Transferts Thermiques et Systèmes Energétiques"
+ "Troisième Année du Certificat d'Etudes Spéciales de Neurologie"
+ "Troisième Année du Certificat d'Etudes Spéciales de Neuro-Chirurgie"
+ 'Thèse de Troisième Cycle Génie Informatique'
+ "Diplôme d'Etudes Approfondies d'Allemand"
+ 'Doctorat de Thèse de Troisième Cycle option Linguistique'
+ 'Thèse de Troisième Cycle Génie Chimique'
+ 'Licence 1 Mathématiques spécialité Enseignement (soir)'
+ "Doctorat d'Etat option Sciences de l'Education"
+ "Quatrième Année du Certificat d'Etudes Spéciales Orthopédie Traumatologie"
+ "Deuxième Année du Certificat d'Etudes Spéciales de Psychiatrie"
+ "Première Année du Diplôme Universitaire d'Etudes Littéraires Section Italien"
+ "Troisième Année du Certificat d'Etudes Spéciales de Cancérologie"
+ "Première Année du Certificat d'Etudes Spéciales de Neurologie"
+ "Attestation d'Etudes Approfondies de Géométrie différentielle"
+ "Première Année du Certificat d'Etudes Spéciales de Maladies Infectieuses"
+ 'Doctorat Ingénieur Géologie Appliquée'
+ "Diplôme d'Etudes Approfondies Météorologie et Gestion des Milieux Arides"
+ "Diplôme d'Etudes Approfondies d'Espagnol"
+ "Attestation d'Etudes Approfondies d'Environnements Sédimentaires"
+ "Certificat d'Etudes Spéciales d'Odonto-Préventive et Sociale"
+ 'Thèse de Troisième Cycle Géométrie différentielle'
+ 'Doctorat Ingénieur Energie Solaire']
+
+
+===== Anomalie 3 =====
+Tableau récapitulatif des valeurs manquantes :
++---------------------+----------------------+---------------+
+| Colonnes            |   Valeurs manquantes |   Pourcentage |
+|---------------------+----------------------+---------------|
+| NUMERO_TABLE        |                29094 |    100        |
+| INE                 |                27181 |     93.4248   |
+| COHORTE             |                26738 |     91.9021   |
+| MAIL_INSTITUTIONNEL |                25650 |     88.1625   |
+| REGION_DE_NAISSANCE |                10534 |     36.2068   |
+| NIVEAU LMD          |                 9859 |     33.8867   |
+| SERIE_BACC          |                  435 |      1.49515  |
+| MENTION_BACC        |                  334 |      1.148    |
+| ANNEE_BACC          |                  279 |      0.958961 |
+| LIEU_DE_NAISSANCE   |                  104 |      0.357462 |
++---------------------+----------------------+---------------+
+
+
+===== Anomalie 4 =====
+[1967.   nan 1979. 1977. 1975. 1974. 1969. 1976. 1978. 1981. 1971. 1970.
+ 1973. 1972. 1956. 1982. 1983. 1980. 1961. 1964. 1963. 1962. 1968. 1958.
+ 1960. 1965. 1955. 1954. 1957. 1966. 1952. 1943. 1984. 1953. 1959. 1950.
+ 1951. 1992. 1947. 1946. 1991. 2098. 1936. 1949. 1944. 1948. 1945.]
+0        20.0
+1         NaN
+2         NaN
+3         NaN
+4        19.0
+         ... 
+29089    18.0
+29090     NaN
+29091    19.0
+29092     NaN
+29093     NaN
+Name: age_bac, Length: 29094, dtype: float64
+Il y a 17 personnes qui ont passé le bac avant 14 ans. voici leur année de naissance et l'année de bac : 	
++------------+---------------------+--------------+-----------+
+| NUMERO     | DATE_DE_NAISSANCE   |   ANNEE_BACC |   age_bac |
+|------------+---------------------+--------------+-----------|
+| .199700WYI | 1969-02-10 00:00:00 |         1981 |        12 |
+| .199900ZLO | 1978-12-06 00:00:00 |         1990 |        12 |
+| .199900UF3 | 1980-02-01 00:00:00 |         1993 |        13 |
+| .199700BVA | 1977-07-03 00:00:00 |         1977 |         0 |
+| .199900PED | 1975-12-01 00:00:00 |         1979 |         4 |
+| .199700X14 | 1972-05-06 00:00:00 |         1984 |        12 |
+| .200101EUB | 1974-11-03 00:00:00 |         1974 |         0 |
+| .2000016BP | 1976-04-10 00:00:00 |         1988 |        12 |
+| .200101CRD | 1992-06-09 00:00:00 |         2001 |         9 |
+| .200101850 | 2098-09-12 00:00:00 |         2001 |       -97 |
+| .199700VPM | 1976-07-03 00:00:00 |         1977 |         1 |
+| .2000014E4 | 1973-05-02 00:00:00 |         1973 |         0 |
+| .2001019E4 | 1977-11-11 00:00:00 |         1977 |         0 |
+| .200101CT7 | 1978-11-01 00:00:00 |         1988 |        10 |
+| .199700BPE | 1974-10-09 00:00:00 |         1974 |         0 |
+| .1997009YS | 1979-03-03 00:00:00 |         1991 |        12 |
+| .2001018TM | 1972-05-07 00:00:00 |         1972 |         0 |
++------------+---------------------+--------------+-----------+
+Il y a 10 personnes qui ont passé le bac avant 40 ans. voici leur année de naissance et l'année de bac : 	
++------------+---------------------+--------------+-----------+
+| NUMERO     | DATE_DE_NAISSANCE   |   ANNEE_BACC |   age_bac |
+|------------+---------------------+--------------+-----------|
+| .199700WN8 | 1954-01-09 00:00:00 |         1997 |        43 |
+| .200101C8Y | 1980-10-07 00:00:00 |         2201 |       221 |
+| .199800N2O | 1956-07-03 00:00:00 |         1997 |        41 |
+| .2001018KL | 1980-01-08 00:00:00 |         2201 |       221 |
+| .200101FN5 | 1980-09-03 00:00:00 |         4737 |      2757 |
+| .200101CLZ | 1982-05-11 00:00:00 |         2375 |       393 |
+| .200101ET0 | 1959-02-08 00:00:00 |         2003 |        44 |
+| .2001017VP | 1983-10-05 00:00:00 |         2201 |       218 |
+| .199700AEP | 1955-07-05 00:00:00 |         1996 |        41 |
+| .2000015GT | 1954-10-01 00:00:00 |         2000 |        46 |
++------------+---------------------+--------------+-----------+
+Il y a 34 personnes qui ont passé le bac avant 30 ans.! pas impossible mais rare
+
+
+===== Anomalie 5 =====
+Il y a 243 doublons exacts dans le DataFrame.(ok)
+Il y a 122 personnes qui ont étudié dans 2 établissements différents.(ok)
+Il y a 0 personnes qui ont étudié dans 3 établissements différents.
+Il y a 0 personnes qui ont étudié dans 4 établissements différents.
+Il y a 0 personnes qui ont étudié dans plus de 4 établissements différents.
+
+
+===== Anomalie 6 =====
+il y'a 798 mentions anormales au bac
+les mentions anormales sont :  ['BI' nan 'ba' 'p' 'TH' 'HO' 'DI' 'DA' '50' 'ta' 'A' 'Ka' 'da' 'P' '0'
+ '15']
+
+
+===== Anomalie 7 =====
+il y'a 1150 qui ont passe leur bac avant  1998 qui une serie de bac pas normale
+ces series sont :  ['B' 'A' 'S2' nan "L'1" 'S' 'L2' 'S1' 'S3' 'G' 'a3']
+il y'a 2693 qui ont passe leur bac apres  1998 qui une serie de bac pas normale
+ces series sont :  ['G2' 'A3' nan 'A' 'C' 'D' 'G' 'B' 'S' 'E' 'A2' 'A4' 'a3' "L'" 'F7']
+
+

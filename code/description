@@ -1,0 +1,20 @@
+description:
+L'objectif principal est de concevoir un modèle prédictif capable d'identifier dès l'inscription ou le début de l'année universitaire 
+les étudiants présentant un risque élevé d'échec, de redoublement ou d'abandon. 
+Ce modèle permettra de classer les étudiants en groupes de risque afin d'orienter d'aider les etudants les plus en difficulte de reussir 
+
+donnee
+Le modèle analysera des données socio-économiques, académiques et administratives 
+(notes , statut boursier, type de logement, filière, âge, seri de bac age de bac region de naissance , sexe , ) pour calculer un score individuel de risque
+
+visualisation
+proposer une maquette streamlite pour visualiser les résultats du modèle et les scores de risque des étudiants.
+- importer les données
+- calcul automatique des scores de risque 
+- visualisation 
+- filtre exemple pour chaque faculté 
+- export des résultats 
+- mettre des recommandation pour chaque groupe  
+
+
+
