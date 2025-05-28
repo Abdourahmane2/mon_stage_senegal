@@ -5,9 +5,17 @@
 \usepackage{xcolor}
 \usepackage{lmodern}
 \usepackage{setspace}
-\usepackage{tcolorbox}
+\usepackage{tcolorbox} 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
 
-\pagestyle{empty}
+
+\pagestyle{empty} 
 
 % Couleur personnalisée (bleu)
 \definecolor{myblue}{RGB}{0, 102, 204}
@@ -23,9 +31,9 @@
     \hfill
     \begin{minipage}{0.6\textwidth}
         \centering
-        {\large\bfseries Université Lyon 2}\\[0.5em]
-        {\large\bfseries Université Cheikh Anta Diop de Dakar}\\[0.5em]
-        {\large\bfseries Direction des Études Statistiques}
+        {\large\bfseries Université Lumiere  Lyon 2}\\[0.5em]
+        {\large\bfseries Direction des Études Statistiques(UCAD)}\\[0.5em]
+
     \end{minipage}
     \hfill
     \begin{minipage}{0.18\textwidth}
@@ -33,7 +41,7 @@
     \end{minipage}
 \end{tcolorbox}
 
-\vspace{1.5cm}
+\vspace{1.5cm} 
 
 % Titre et sous-titre centrés
 \begin{center}
@@ -46,7 +54,7 @@
 \begin{center}
     {\fontsize{22}{26}\selectfont Abdourahmane Timera}\\[1.5em]
     {\fontsize{16}{20}\selectfont
-        Master Informatique, Parcours Data Science\\[0.5em]
+        Master Informatique, Parcours science des données\\[0.5em]
         Stage de 2 mois à la Direction des Études Statistiques (UCAD)\\[0.5em]
         Du 02/05/2025 au 31/06/2025\\[0.5em]
         Année Universitaire 2024-2025\\[2em]
@@ -60,18 +68,34 @@
     \begin{minipage}{0.45\textwidth}
         \raggedright
         \textbf{Encadrant Lyon 2 :}\\
-        Dr. Prénom Nom\\
+         Ricco Rakotomalala\\
         (Université Lyon 2)
     \end{minipage}
     \hfill
-    \begin{minipage}{0.45\textwidth}
+    \begin{minipage}{0.45 \textwidth}
         \raggedleft
         \textbf{Encadrant UCAD :}\\
-        Dr. Prénom Nom\\
+        Dr. Mountagua Lam \\
         (UCAD)
     \end{minipage}
 \end{tcolorbox}
 
 \vfill
+
+% saut de page
+\newpage
+
+% tableau des matières
+\begin{center}
+    \color{myblue}\rule{0.6\textwidth}{3pt}\\[1em]
+    {\fontsize{18}{22}\selectfont\bfseries Table des Matières}\\[1em]
+    \color{myblue}\rule{0.6\textwidth}{1pt}
+\end{center}
+
+
+% importer le fichier matiere.tex
+\tableofcontents
+\vspace{1cm}
+\input{matiere.tex}
 
 \end{document}
