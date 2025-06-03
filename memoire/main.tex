@@ -14,8 +14,7 @@
     citecolor=blue
 }
 
-
-\pagestyle{empty} 
+\pagestyle{empty}
 
 % Couleur personnalisée (bleu)
 \definecolor{myblue}{RGB}{0, 102, 204}
@@ -25,76 +24,82 @@
 % Logos dans un rectangle en haut de page
 \vspace*{-1.5cm}
 \begin{tcolorbox}[colframe=myblue, colback=white, boxrule=1pt, arc=4pt, width=\textwidth, left=0pt, right=0pt, top=2pt, bottom=2pt]
-    \begin{minipage}{0.18\textwidth}
-        \includegraphics[width=\textwidth]{image/lyon.png}
+    \begin{minipage}{0.20\textwidth}
+        \includegraphics[width=\textwidth]{image/icom.jpg}
     \end{minipage}
     \hfill
     \begin{minipage}{0.6\textwidth}
         \centering
-        {\large\bfseries Université Lumiere  Lyon 2}\\[0.5em]
-        {\large\bfseries Direction des Études Statistiques(UCAD)}\\[0.5em]
-
+        {\large\bfseries Université Lumière Lyon 2}\\[0.3em]
+        {\normalsize\bfseries UFR ICOM – Master Informatique}\\[0.3em]
+        {\small Master Informatique, 1ère année}
     \end{minipage}
     \hfill
     \begin{minipage}{0.18\textwidth}
         \includegraphics[width=\textwidth]{image/ucad.jpg}
     \end{minipage}
-\end{tcolorbox}
+\end{tcolorbox} 
 
-\vspace{1.5cm} 
+\vspace{1cm}
 
-% Titre et sous-titre centrés
+% Titre principal
 \begin{center}
-    {\fontsize{38}{44}\selectfont\bfseries Rapport de Stage}\\[0.7em]
+    {\fontsize{38}{44}\selectfont\bfseries Rapport de Stage}\\[1em]
     \color{myblue}\rule{0.6\textwidth}{3pt}
 \end{center}
 
-\vspace{1cm}
+\vspace{1cm} 
 
 \begin{center}
-    {\fontsize{22}{26}\selectfont Abdourahmane Timera}\\[1.5em]
+    {\fontsize{24}{24}\selectfont\bfseries Analyse et modélisation prédictive des effectifs universitaires}\\[1em]
+\end{center}
+
+\vspace{1cm} 
+
+% Étudiant et infos stage
+\begin{center}
+    {\fontsize{20}{24}\selectfont Abdourahmane Timera}\\[1em]
     {\fontsize{16}{20}\selectfont
-        Master Informatique, Parcours science des données\\[0.5em]
-        Stage de 2 mois à la Direction des Études Statistiques (UCAD)\\[0.5em]
-        Du 02/05/2025 au 31/06/2025\\[0.5em]
-        Année Universitaire 2024-2025\\[2em]
+        Stage effectué à la\\
+        \textbf{Division des Études Statistiques (DES)} – UCAD\\[0.8em]
+        Du 02/05/2025 au 31/06/2025\\[0.8em]
+        Année universitaire 2024–2025
     }
 \end{center}
 
-\vspace{1cm}
+\vspace{1.5cm}
 
-% Encadrants dans un tableau, gauche/droite
+% Encadrants
 \begin{tcolorbox}[colframe=myblue, colback=white, boxrule=0.8pt, arc=4pt, width=0.9\textwidth, left=0.5cm, right=0.5cm]
     \begin{minipage}{0.45\textwidth}
         \raggedright
-        \textbf{Encadrant Lyon 2 :}\\
-         Ricco Rakotomalala\\
-        (Université Lyon 2)
+        \textbf{Tuteur en entreprise :}\\
+        Dr. Mountagua Lam\\
+        (DES – UCAD)
     \end{minipage}
     \hfill
-    \begin{minipage}{0.45 \textwidth}
+    \begin{minipage}{0.45\textwidth}
         \raggedleft
-        \textbf{Encadrant UCAD :}\\
-        Dr. Mountagua Lam \\
-        (UCAD)
+        \textbf{Encadrant pédagogique :}\\
+        Ricco Rakotomalala\\
+        (Université Lumière Lyon 2 – ICOM)
     \end{minipage}
 \end{tcolorbox}
 
 \vfill
 
-% saut de page
 \newpage
 
-% tableau des matières
+% Table des matières
 \begin{center}
     \color{myblue}\rule{0.6\textwidth}{3pt}\\[1em]
     {\fontsize{18}{22}\selectfont\bfseries Table des Matières}\\[1em]
     \color{myblue}\rule{0.6\textwidth}{1pt}
 \end{center}
 
+\renewcommand{\contentsname}{Table des Matières}
+\tableofcontents 
 
-% importer le fichier matiere.tex
-\tableofcontents
 \vspace{1cm}
 \input{matiere.tex}
 
