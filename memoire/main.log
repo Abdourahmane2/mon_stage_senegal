@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.27)  11 JUN 2025 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.27)  16 JUN 2025 12:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -495,7 +495,7 @@ Package hyperref Info: Link coloring ON on input line 24.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-<image/icom.jpg, id=98, 401.5pt x 401.5pt>
+<image/icom.jpg, id=106, 401.5pt x 401.5pt>
 File: image/icom.jpg Graphic file (type jpg)
 <use image/icom.jpg>
 Package pdftex.def Info: image/icom.jpg  used on input line 30.
@@ -518,7 +518,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 31.
-<image/ucad.jpg, id=99, 475.7775pt x 477.785pt>
+<image/ucad.jpg, id=107, 475.7775pt x 477.785pt>
 File: image/ucad.jpg Graphic file (type jpg)
 <use image/ucad.jpg>
 Package pdftex.def Info: image/ucad.jpg  used on input line 41.
@@ -534,7 +534,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 11
  (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [3{C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-<image/des.jpg, id=142, 455.45157pt x 588.69937pt>
+<image/des.jpg, id=152, 455.45157pt x 588.69937pt>
 File: image/des.jpg Graphic file (type jpg)
 <use image/des.jpg>
 Package pdftex.def Info: image/des.jpg  used on input line 37.
@@ -542,23 +542,23 @@ Package pdftex.def Info: image/des.jpg  used on input line 37.
 ) [4] [5 <./image/des.jpg>] (mission.tex) (donnees.tex [6] [7]
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 38.
  (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree1.fd)
-<image/python.png, id=161, 376.40625pt x 375.4025pt>
+<image/python.png, id=171, 376.40625pt x 375.4025pt>
 File: image/python.png Graphic file (type png)
 <use image/python.png>
 Package pdftex.def Info: image/python.png  used on input line 48.
 (pdftex.def)             Requested size: 47.206pt x 47.07985pt.
-<image/vscode.png, id=163, 513.92pt x 513.92pt>
+<image/vscode.png, id=173, 513.92pt x 513.92pt>
 File: image/vscode.png Graphic file (type png)
 <use image/vscode.png>
 Package pdftex.def Info: image/vscode.png  used on input line 63.
 (pdftex.def)             Requested size: 47.206pt x 47.19965pt.
  [8{C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free1.enc} <./image/python.png>]
-<image/powerbi.jpg, id=170, 322.20375pt x 257.96375pt>
+<image/powerbi.jpg, id=180, 322.20375pt x 257.96375pt>
 File: image/powerbi.jpg Graphic file (type jpg)
 <use image/powerbi.jpg>
 Package pdftex.def Info: image/powerbi.jpg  used on input line 70.
 (pdftex.def)             Requested size: 84.96216pt x 68.02155pt.
-<image/excel.png, id=171, 1204.5pt x 632.3625pt>
+<image/excel.png, id=181, 1204.5pt x 632.3625pt>
 File: image/excel.png Graphic file (type png)
 <use image/excel.png>
 Package pdftex.def Info: image/excel.png  used on input line 76.
@@ -568,109 +568,153 @@ Overfull \hbox (11.53152pt too wide) in paragraph at lines 4--5
 []\OT1/lmr/bx/n/12 Analyse des be-soins \OT1/lmr/m/n/12 : Compr^^Sehension des ob-jec-tifs du pro-jet et des donn^^Sees disponibles. 
  []
 
-[10]
-Overfull \hbox (3.45099pt too wide) in paragraph at lines 44--46
-[]\OT1/lmr/m/n/12 - la repa-ra-tion d'hommes et femmes est presque ^^Segale, avec une l^^Seg^^Rere ma-jorit^^Se d'hommes
- []
+<image/Gantt.png, id=188, 1445.4pt x 813.0375pt>
+File: image/Gantt.png Graphic file (type png)
+<use image/Gantt.png>
+Package pdftex.def Info: image/Gantt.png  used on input line 13.
+(pdftex.def)             Requested size: 472.03123pt x 265.51187pt.
 
-<image/etudiants.png, id=182, 828.09375pt x 456.5055pt>
-File: image/etudiants.png Graphic file (type png)
-<use image/etudiants.png>
-Package pdftex.def Info: image/etudiants.png  used on input line 50.
-(pdftex.def)             Requested size: 472.03123pt x 260.22476pt.
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 50--51
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 13--14
  [] 
  []
 
-[11]
-<image/diplomes.png, id=187, 817.25325pt x 446.8695pt>
+[10 <./image/Gantt.png (PNG copy)>] [11]
+Overfull \hbox (3.45099pt too wide) in paragraph at lines 49--51
+[]\OT1/lmr/m/n/12 - la repa-ra-tion d'hommes et femmes est presque ^^Segale, avec une l^^Seg^^Rere ma-jorit^^Se d'hommes
+ []
+
+<image/etudiants.png, id=197, 828.09375pt x 456.5055pt>
+File: image/etudiants.png Graphic file (type png)
+<use image/etudiants.png>
+Package pdftex.def Info: image/etudiants.png  used on input line 55.
+(pdftex.def)             Requested size: 472.03123pt x 260.22476pt.
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 55--56
+ [] 
+ []
+
+<image/diplomes.png, id=198, 817.25325pt x 446.8695pt>
 File: image/diplomes.png Graphic file (type png)
 <use image/diplomes.png>
-Package pdftex.def Info: image/diplomes.png  used on input line 65.
+Package pdftex.def Info: image/diplomes.png  used on input line 70.
 (pdftex.def)             Requested size: 472.03123pt x 258.10031pt.
 
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 65--66
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 70--71
  [] 
  []
 
 [12 <./image/etudiants.png>]
-<image/doc.png, id=193, 814.242pt x 447.47176pt>
+<image/doc.png, id=204, 814.242pt x 447.47176pt>
 File: image/doc.png Graphic file (type png)
 <use image/doc.png>
-Package pdftex.def Info: image/doc.png  used on input line 76.
+Package pdftex.def Info: image/doc.png  used on input line 81.
 (pdftex.def)             Requested size: 424.82523pt x 233.46503pt.
  [13 <./image/diplomes.png> <./image/doc.png>]
-<image/1.png, id=201, 526.96875pt x 19.272pt>
+<image/1.png, id=212, 526.96875pt x 19.272pt>
 File: image/1.png Graphic file (type png)
 <use image/1.png>
-Package pdftex.def Info: image/1.png  used on input line 91.
+Package pdftex.def Info: image/1.png  used on input line 96.
 (pdftex.def)             Requested size: 472.03123pt x 17.26375pt.
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 94.
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 99.
  (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<image/2.png, id=202, 311.9655pt x 217.41225pt>
+<image/2.png, id=213, 311.9655pt x 217.41225pt>
 File: image/2.png Graphic file (type png)
 <use image/2.png>
-Package pdftex.def Info: image/2.png  used on input line 98.
+Package pdftex.def Info: image/2.png  used on input line 103.
 (pdftex.def)             Requested size: 236.01561pt x 164.48526pt.
-<image/3.png, id=203, 368.577pt x 202.95825pt>
+<image/3.png, id=214, 368.577pt x 202.95825pt>
 File: image/3.png Graphic file (type png)
 <use image/3.png>
-Package pdftex.def Info: image/3.png  used on input line 103.
+Package pdftex.def Info: image/3.png  used on input line 108.
 (pdftex.def)             Requested size: 236.01561pt x 129.96715pt.
  [14{C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc} <./image/1.png> <./image/2.png> <./image/3.png>]
-<image/4.png, id=212, 440.24475pt x 215.6055pt>
+<image/4.png, id=223, 440.24475pt x 215.6055pt>
 File: image/4.png Graphic file (type png)
 <use image/4.png>
-Package pdftex.def Info: image/4.png  used on input line 110.
+Package pdftex.def Info: image/4.png  used on input line 115.
 (pdftex.def)             Requested size: 212.41261pt x 104.02899pt.
-<image/5.png, id=213, 437.83575pt x 260.172pt>
+<image/5.png, id=224, 437.83575pt x 260.172pt>
 File: image/5.png Graphic file (type png)
 <use image/5.png>
-Package pdftex.def Info: image/5.png  used on input line 112.
+Package pdftex.def Info: image/5.png  used on input line 117.
 (pdftex.def)             Requested size: 212.41261pt x 126.21898pt.
-<image/6.png, id=214, 444.4605pt x 307.1475pt>
+<image/6.png, id=225, 444.4605pt x 307.1475pt>
 File: image/6.png Graphic file (type png)
 <use image/6.png>
-Package pdftex.def Info: image/6.png  used on input line 122.
+Package pdftex.def Info: image/6.png  used on input line 129.
 (pdftex.def)             Requested size: 212.41261pt x 146.78705pt.
-<image/7.png, id=215, 449.88075pt x 314.3745pt>
+<image/7.png, id=226, 449.88075pt x 314.3745pt>
 File: image/7.png Graphic file (type png)
 <use image/7.png>
-Package pdftex.def Info: image/7.png  used on input line 124.
+Package pdftex.def Info: image/7.png  used on input line 131.
 (pdftex.def)             Requested size: 212.41261pt x 148.43239pt.
-<image/8.png, id=216, 439.6425pt x 239.09325pt>
+<image/8.png, id=227, 439.6425pt x 239.09325pt>
 File: image/8.png Graphic file (type png)
 <use image/8.png>
-Package pdftex.def Info: image/8.png  used on input line 134.
+Package pdftex.def Info: image/8.png  used on input line 141.
 (pdftex.def)             Requested size: 212.41261pt x 115.51498pt.
-<image/9.png, id=217, 440.847pt x 245.718pt>
+<image/9.png, id=228, 440.847pt x 245.718pt>
 File: image/9.png Graphic file (type png)
 <use image/9.png>
-Package pdftex.def Info: image/9.png  used on input line 136.
+Package pdftex.def Info: image/9.png  used on input line 143.
 (pdftex.def)             Requested size: 212.41261pt x 118.39322pt.
- [15 <./image/4.png> <./image/5.png> <./image/6.png> <./image/7.png>])) [16 <./image/8.png> <./image/9.png>] (main.aux)
+ [15 <./image/4.png> <./image/5.png> <./image/6.png> <./image/7.png>]
+<image/10.png, id=237, 298.716pt x 18.66975pt>
+File: image/10.png Graphic file (type png)
+<use image/10.png>
+Package pdftex.def Info: image/10.png  used on input line 172.
+(pdftex.def)             Requested size: 472.03123pt x 29.50441pt.
+<image/11.png, id=238, 450.483pt x 331.2375pt>
+File: image/11.png Graphic file (type png)
+<use image/11.png>
+Package pdftex.def Info: image/11.png  used on input line 175.
+(pdftex.def)             Requested size: 472.03123pt x 347.08687pt.
+ [16 <./image/8.png> <./image/9.png> <./image/10.png>]
+<image/12.png, id=246, 396.2805pt x 40.35075pt>
+File: image/12.png Graphic file (type png)
+<use image/12.png>
+Package pdftex.def Info: image/12.png  used on input line 189.
+(pdftex.def)             Requested size: 472.03123pt x 48.06723pt.
+<image/13.png, id=247, 629.9535pt x 331.2375pt>
+File: image/13.png Graphic file (type png)
+<use image/13.png>
+Package pdftex.def Info: image/13.png  used on input line 192.
+(pdftex.def)             Requested size: 472.03123pt x 248.20511pt.
+ [17 <./image/11.png> <./image/12.png>]
+<image/14.png, id=254, 455.90324pt x 157.7895pt>
+File: image/14.png Graphic file (type png)
+<use image/14.png>
+Package pdftex.def Info: image/14.png  used on input line 205.
+(pdftex.def)             Requested size: 330.42041pt x 114.36435pt.
+ [18 <./image/13.png> <./image/14.png>])) [19] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B21E50384CABDC4FB2F081172AC162BC;4539.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 820921C71C1C23C012DB4CA3E6C2A05E;4878
+(rerunfilecheck)             After:  413B42269E1A41709103AB9FA8C72AA0;4881.
  ) 
 Here is how much of TeX's memory you used:
- 22548 strings out of 474486
- 443812 string characters out of 5745171
- 1935542 words of memory out of 5000000
- 44431 multiletter control sequences out of 15000+600000
+ 22597 strings out of 474486
+ 444706 string characters out of 5745171
+ 1936542 words of memory out of 5000000
+ 44475 multiletter control sequences out of 15000+600000
  614673 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,8n,87p,729b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (16 pages, 1050615 bytes).
+Output written on main.pdf (19 pages, 1217153 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 292 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 311 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 338 words of extra memory for PDF output out of 10000 (max. 10000000)
 

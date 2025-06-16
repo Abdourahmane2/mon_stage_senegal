@@ -8,6 +8,11 @@ Un diagramme de Gantt a été élaboré pour planifier et suivre les différente
     \item \textbf{Modélisation et analyse prédictive} : Développement de modèles pour prédire les résultats futurs.
     \item \textbf{Visualisation des données} : Création de graphiques et de tableaux de bord pour présenter les résultats.
     \item \textbf{Rédaction du rapport final} : Compilation des résultats et rédaction du rapport de stage. 
+    voici un aperçu du diagramme de Gantt :
+    \begin{center}
+    \includegraphics[width=1\textwidth]{image/Gantt.png} 
+    \end{center}
+
 \end{itemize} 
 
 \subsection{Extraction et compréhension des données} 
@@ -115,6 +120,8 @@ j'ai pu observer l'evolution des effectifs des étudiants au fil des années, la
 \textcolor{red}{\faInfoCircle}\textbf{Conclusion :}  J'ai remarqué que la majorité des étudiants sont âgés de 18 à 25 ans, ce qui est normal car la plupart des étudiants commencent leurs études supérieures à cet âge. Cependant, il y a aussi une proportion importante d'étudiants âgés de 26 à 30 ans, ce qui peut être dû à des étudiants qui ont repris leurs études après une pause ou qui ont changé de filière.
 Concernant les inscriptions, j'ai pu observer l'évolution des inscriptions au fil des années. Cependant le nombre d'inscrits est tres basse en 2025 ce qui normale l'année 2024 n'est pas encore terminée. 
 
+\vspace{0.5cm}  
+
 Une fois cette etape termine une autre cellule a été crée pour voir l'historique académique des étudiants. Les différentes series et mentions ont été analysées pour comprendre la répartition des étudiants par série et par mention. J'ai utilisé la fonction \texttt{value\_counts()} pour compter le nombre d'étudiants dans chaque série et chaque mention 
 voici les résultats obtenus :
 \begin{center}
@@ -150,6 +157,61 @@ Les étudiants issus des séries littéraires affichent le taux de redoublement 
 
 Les étudiants issus des séries tertiaires enregistrent le taux le plus bas 2,59\%. Cela suggère que les étudiants des séries littéraires et scientifiques rencontrent plus de difficultés en L1, tandis que ceux des séries tertiaires semblent mieux préparés pour cette étape universitaire. 
 
+Pour verifier si ces résultats sont significatifs, j'ai utilisé le test du Chi-2.
+J'ai utilisé la fonction \texttt{chi2\_contingency()} de la bibliothèque \texttt{scipy.stats} pour effectuer le test du Chi-2.
+et j'ai constate que la p-value est inférieure à 0.05, ce qui signifie que les résultats sont significatifs.
+J'ai donc pu conclure que la mention du Bac et la série du Bac ont un effet significatif sur le taux de redoublement en L1.
+
+\vspace{1cm}  
 
 
+Une autre analyse appelle suivi de cohorte a ete faite. Le but est de suivre une cohorte d'étudiants sur plusieurs années pour observer leur parcours académique. J'ai créer une fonction qui prend en entrée le jeux de donnée , l'année de bac , la série du bac et l'année universitaire
+et qui retourne le nombre d'étudiants qui on redouble pour chaque année universitaire , les diplômes  apres 3 ans 4 ans et 5 ans et le taux d'abandon pour chaque année universitaire. 
+Pour une premier version voici les résultats obtenus pour la cohorte de 2019 en série littéraire 
+\begin{center}
+    \includegraphics[width=1\textwidth]{image/10.png} 
+\end{center} 
+\begin{center}
+    \includegraphics[width=1\textwidth]{image/11.png} 
+\end{center} 
+Ici, on remarque que sur 5976 inscrits en L1 en 2018-2019, titulaires du baccalauréat série L2 obtenu en 2018, 1325 étudiants ont obtenu leur licence, soit environ 22,2\% de la cohorte initiale.
+Parmi eux :
+\begin{itemize}
+    \item 715 étudiants, soit 53.3\% des diplomes, ont obtenu leur licence en 3 ans,
+    \item 407 étudiants, soit 30.7\%, en 4 ans,
+    \item 201 étudiants, soit 15.16\%, en 5 ans,
+    \item enfin, 2 étudiants, soit environ 0,15\%, en 6 ans.
+\end{itemize} 
+On remarque  aussi que 77,8\% de cette  cette cohorte n'obtienne pas la license (changement d'ecole  exclusion  voyage , etc...). 
+
+Une deuxième version de cette fonction a été écrite pour faire une analyse plus approfondie des résultats. cette fois si la fonction va prendre en paramètre la faculté et le département de l'étudiant en plus.
+\begin{center}
+    \includegraphics[width=1\textwidth]{image/12.png} 
+\end{center} 
+\begin{center}
+    \includegraphics[width=1\textwidth]{image/13.png} 
+\end{center} 
+\textcolor{red}{\faInfoCircle}\textbf{Conclusion :} 
+On remarque que de manière générale le taux de redoublement est relativement élevé. La plupart des étudiants redoublent en L1, suivis de L2 et L3 , et aussi beaucoup d'étudiants abandonnent leurs études en L1.
+A noter aussi que une grande partie des étudiants n'obtiennent pas leur licence..Cela peut être dû à plusieurs facteurs, tels que le manque de préparation, les difficultés d'adaptation à l'université , des problèmes personnels ou peut être le système d'orientation qui n'est pas adapté aux étudiants. 
+
+\subsection{Fusion des données}
+Je dispose de plusieurs  fichiers 
+qui contiennent des informations sur les étudiants c'est a dire leur nom, prénom, date de naissance, numéro d'étudiant, etc.
+et leur parcours académiques et un autres fichier contenant les memes données avec les résultats universitaires en plus . J'ai donc decide de fusionner les deux fichiers pour avoir un seul fichier contenant toutes les informations sur les étudiants. 
+Pour cela j'ai d'abord sélectionner les colonnes en commun entre les deux fichiers et j'ai utilisé la fonction \texttt{merge()} de la bibliothèque \texttt{pandas} pour fusionner les deux fichiers. 
+Pour les fusionner  j'ai utilise la colonne "Numéro" et "Année Université". j'ai utilise le paramètre "inner" pour ne garder que les lignes qui ont des valeurs communes dans les deux fichiers. Une fois la fusion terminée, j'ai vérifié si le nombre de lignes du nouveau fichier était égal à la somme des lignes des deux fichiers d'origine. Apres avoir vérifié que la fusion s'est bien déroulée, j'ai enregistré le nouveau fichier dans un fichier csv appelle \texttt{base\_finale} . 
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{image/14.png} 
+\end{center} 
+
+\subsection{Etude du système DIORES} 
+DIORES est un système intelligent d'orientation et de reorientation dans l'enseignement supérieur au Sénégal réalise par des chercheurs et des étudiants  de l'Université Cheikh Anta Diop de Dakar. 
+En effet le système actuelle Campusen n'oriente pas efficacement les étudiants dans l'enseignement supérieur. Il ne prend pas en compte des critères comme le profil , les réalités socio-économiques. Il ne propose que les recommandations base sur les données. Ce système n'est pas adapte aux besoins des étudiants car on constate un taux d'échec tres élevé dans l'enseignement supérieur. 
+C'est dans ce contexte que l'etude vise a développer un système d'orientation base sur L'IA pour améliorer pour permettre aux étudiants d'être mieux oriente et réoriente dans l'enseignement supérieur. 
+Les chercheurs analysent l'écart le classement d'un étudiant de Capusen et sa réussite réelle dans l'enseignement supérieur. 
+Les chercheurs analysent l'écart entre le classement d'un étudiant par Campusen et sa réussite réelle dans l'enseignement supérieur, dans le but de proposer un modèle plus fiable. Pour cela, ils ont utilisé  des algorithmes d'apprentissage automatique IA, notamment la régression Lasso et divers modèles de machine learning (régression logistique, forêts aléatoires, réseaux de neurones, etc.)  
+Les résultats sont satisfaisant et montrent que le modèle proposé est plus fiable que celui de Campusen. 
+Pour avoir un model plus performant et utilisable  les chercheurs envisagent de collecter plus de données sur les étudiants, notamment des données sur leur parcours académique antérieurs , intégrer des variables socio-économiques et psychologiques et enfin Finaliser et déployer une plateforme d'orientation intelligente pour l'enseignement supérieur sénégalais. 
+Malheureusement je ne dispose je ne dispose pas des données nécessaire pour reproduire cette etude  
 
