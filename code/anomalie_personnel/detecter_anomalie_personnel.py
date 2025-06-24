@@ -11,7 +11,7 @@ import numpy as np
 # lire les données
 
 # %%
-data = pd.read_excel('C:/Users/HP/Desktop/mon_stage_senegal/data/Personnel_2000_2024/Liste_agent_des_archive 2000.xlsx') 
+data = pd.read_excel('C:/Users/HP/Desktop/mon_stage_senegal/code/data/Personnel_2000_2024/Liste_agent_des_archive 2000.xlsx') 
 
 # %%
 
@@ -174,6 +174,10 @@ def exporter_anomalies_personnel(fichier_entree ):
             f.write(buffer.getvalue())
             f.write("\n\n")
     print(f"Les anomalies  ont été exportées vers {nom_sortie}")
+
+
+
+exporter_anomalies_personnel(data)    
     
 
     
