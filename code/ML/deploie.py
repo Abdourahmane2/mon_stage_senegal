@@ -42,12 +42,12 @@ data = load_data()
 
 
 data.columns = data.columns.str.lower().str.replace(" ", "_")
-data['moyenne_annuelle'] = pd.to_numeric(data['moyenne_annuelle'], errors='coerce')
+"""data['moyenne_annuelle'] = pd.to_numeric(data['moyenne_annuelle'], errors='coerce')
 
 # Remplir les NaN par moyenne groupe
 data['moyenne_annuelle'] = data.groupby(['resultat', 'mention_bacc'])['moyenne_annuelle'].transform(
     lambda x: x.fillna(x.mean())
-)
+)"""
 
 # Classification du bac
 def serie_bac_type(serie):
