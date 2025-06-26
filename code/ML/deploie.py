@@ -1,3 +1,5 @@
+from io import BytesIO
+import requests
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -12,11 +14,19 @@ Cette application vous permet de **voir dans quels départements les étudiants 
 """)
 
 # --- Chargement et nettoyage des données ---
+
 @st.cache_data
 def load_data():
-    return pd.read_csv("base_finale.csv", low_memory=False)
+    url = "https://drive.google.com/file/d/1pviwWW87UCyvs2_r9qYrHpxGZPrt-YGp/view?usp=sharing"  
+    response = requests.get(url)
+    if response.status_code != 200:
+        st.error("Erreur de téléchargement du fichier. Vérifiez le lien Google Drive.")
+        st.stop()
+    return pd.read_csv(BytesIO(response.content), low_memory=False)
 
 data = load_data()
+
+
 data.columns = data.columns.str.lower().str.replace(" ", "_")
 data['moyenne_annuelle'] = pd.to_numeric(data['moyenne_annuelle'], errors='coerce')
 
@@ -217,4 +227,4 @@ if st.sidebar.button("🔍 Voir les résultats"):
     
 
 else:
-    st.info("Remplissez les champs à gauche et cliquez sur 'Voir les résultats'.")
+    st.info("Remplissez les champs à gauche et cliquez sur 'Voir les résultats'.") 
