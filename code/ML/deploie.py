@@ -115,6 +115,7 @@ annee_bacc = st.sidebar.selectbox(" votre année du Bac *", range(2021, 2025))
 #nationnalite senegalaise par défaut
 nationalite = st.sidebar.selectbox("Nationalité *", ['SÉNÉGALAISE'] + sorted(data['nationalite'].dropna().unique()))
 mention_bacc = st.sidebar.selectbox("Mention que vous visez au bac (selon votre niveau)", ['Indifférent'] + sorted(data['mention_bacc'].dropna().unique()))
+sexe = st.sidebar.selectbox("Votre sexe", data['sexe'].dropna().unique())
 
 
 
@@ -127,6 +128,7 @@ if st.sidebar.button("🔍 Voir les résultats"):
         (data['serie_clean'] == serie_bacc) &
         (data['annee_bacc'] == annee_bacc - 1) &
         (data['nationalite'].str.upper() == nationalite.upper())
+        & (data['sexe'] == sexe)
     ]
     print(data['mention_bacc'].unique())
     print(data['serie_clean'].unique())
@@ -170,19 +172,45 @@ if st.sidebar.button("🔍 Voir les résultats"):
     # Recommandation
     #fonction pour prendre en entreer les nb etudiants et le taux de réussite
     def recommandation(stats_df):
-        total_etudiants = stats_df['Étudiants'].sum()
-        # Calcul de la note pondérée globale
-        stats_df['note_individuelle'] = (stats_df['Étudiants'] / total_etudiants) * stats_df['Taux de réussite en L1 (%)']
-        note = stats_df['note_individuelle'].sum()
-        # Trouver le département dont le taux est le plus proche de la note pondérée
-        stats_df['ecart'] = abs(stats_df['Taux de réussite en L1 (%)'] - note)
-        min_ecart = stats_df['ecart'].min()
-        # Retourner le nom du département correspondant
-        return stats_df[stats_df['ecart'] == min_ecart]['Département'].values[0]
+        stats_df = stats_df.copy()
+        
+        # Normalisation sur 100
+        stats_df['score_reussite'] = stats_df['Taux de réussite en L1 (%)']
+        stats_df['score_taille'] = (stats_df['Étudiants'] / stats_df['Étudiants'].max()) * 100
+        stats_df['score_moyenne'] = (stats_df['Moyenne annuelle'] / stats_df['Moyenne annuelle'].max()) * 100
+
+        # Pondération
+        stats_df['score_total'] = (
+            0.5 * stats_df['score_reussite'] +
+            0.3 * stats_df['score_taille'] +
+            0.2 * stats_df['score_moyenne']
+        )
+
+        meilleur = stats_df.loc[stats_df['score_total'].idxmax()]
+        return meilleur['Département']
+
 
    
     st.markdown("### ✅ Recommandation personnalisée")
-    st.success(f"**Nous vous recommandons le département `{recommandation(stats_df)}`**  \nTenez compte de vos compétences et intérêts avant de faire votre choix final.")
+
+    reco = recommandation(stats_df)
+
+    st.success(f"""
+    🎯 **D'après les parcours d'étudiants ayant un profil similaire au vôtre**, le département recommandé est :  
+    ### 👉 `{reco}`
+
+    Ce choix repose sur une combinaison de critères :
+    - ✅ Un **bon taux de réussite** en première année (L1)
+    - 👥 Une **forte présence d'étudiants** issus de la même série, nationalité et mention que vous
+    - 📊 Une **stabilité des performances** observées sur les années précédentes
+
+    ---
+
+    💡 Cette recommandation est une **aide à la décision**, basée sur les données historiques d'orientation et de réussite à l'UCAD. Elle ne garantit pas votre réussite, mais vous donne une **indication pertinente**.
+
+    🧭 **Pensez également à vos centres d'intérêt, votre motivation et vos ambitions professionnelles** pour faire un choix éclairé.
+    """)
+
 
     st.warning("⚠️ Note : Ces données sont basées sur les parcours d'étudiants précédents orientes a l'UCAD. Elles ne garantissent pas votre réussite dans un département spécifique.")
 
