@@ -14,15 +14,29 @@ Cette application vous permet de **voir dans quels départements les étudiants 
 """)
 
 # --- Chargement et nettoyage des données ---
-
+#https://drive.google.com/file/d/1pviwWW87UCyvs2_r9qYrHpxGZPrt-YGp/view?usp=sharing
+@st.cache_data
 @st.cache_data
 def load_data():
-    url = "https://drive.google.com/file/d/1pviwWW87UCyvs2_r9qYrHpxGZPrt-YGp/view?usp=sharing"  
+    file_id = "1pviwWW87UCyvs2_r9qYrHpxGZPrt-YGp"  
+    url = f"https://drive.google.com/uc?id={file_id}"
+    
     response = requests.get(url)
+    
     if response.status_code != 200:
-        st.error("Erreur de téléchargement du fichier. Vérifiez le lien Google Drive.")
+        st.error("❌ Téléchargement échoué.")
         st.stop()
-    return pd.read_csv(BytesIO(response.content), low_memory=False)
+
+    try:
+        # 👇 Pour afficher le contenu brut si erreur
+        content_sample = response.content.decode('utf-8')[:500]
+        st.code(content_sample, language='text')
+
+        return pd.read_csv(BytesIO(response.content), low_memory=False)
+    except Exception as e:
+        st.error(f"Erreur pendant le chargement du fichier : {e}")
+        st.stop()
+
 
 data = load_data()
 
