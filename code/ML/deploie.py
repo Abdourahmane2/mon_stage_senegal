@@ -18,36 +18,31 @@ Cette application vous permet de **voir dans quels départements les étudiants 
 @st.cache_data
 @st.cache_data
 def load_data():
-    file_id = "1pviwWW87UCyvs2_r9qYrHpxGZPrt-YGp"  
-    url = f"https://drive.google.com/uc?id={file_id}"
-    
+    # API URL pour accéder à un fichier LFS
+    url = "https://github.com/Abdourahmane2/donne_etudiant/raw/main/base_finale.csv"
+
     response = requests.get(url)
-    
     if response.status_code != 200:
-        st.error("❌ Téléchargement échoué.")
+        st.error("❌ Échec du téléchargement.")
         st.stop()
 
-    try:
-        # 👇 Pour afficher le contenu brut si erreur
-        content_sample = response.content.decode('utf-8')[:500]
-        st.code(content_sample, language='text')
+    return pd.read_csv(BytesIO(response.content), low_memory=False)
 
-        return pd.read_csv(BytesIO(response.content), low_memory=False)
-    except Exception as e:
-        st.error(f"Erreur pendant le chargement du fichier : {e}")
-        st.stop()
-
+try:
+    data = load_data()
+except Exception as e:
+    st.error(f"❌ Erreur de chargement : {e}")
 
 data = load_data()
 
 
 data.columns = data.columns.str.lower().str.replace(" ", "_")
-"""data['moyenne_annuelle'] = pd.to_numeric(data['moyenne_annuelle'], errors='coerce')
+data['moyenne_annuelle'] = pd.to_numeric(data['moyenne_annuelle'], errors='coerce')
 
 # Remplir les NaN par moyenne groupe
 data['moyenne_annuelle'] = data.groupby(['resultat', 'mention_bacc'])['moyenne_annuelle'].transform(
     lambda x: x.fillna(x.mean())
-)"""
+)
 
 # Classification du bac
 def serie_bac_type(serie):
