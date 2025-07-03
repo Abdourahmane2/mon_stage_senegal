@@ -9,7 +9,7 @@ import time
 
 
 with st.spinner("⏳ Cette page peut prendre un peu de temps à charger car nous téléchargeons une grande base de donnée. Veuillez patienter..." ):
-    time.sleep(3) # À remplacer par ton vrai traitemen
+    time.sleep(10) 
 st.title("📊 Statistiques d'Orientation UCAD") 
 st.markdown("""
 Si vous décidez de venir à l'UCAD, vous aurez à choisir un département de formation en Licence 1. 
