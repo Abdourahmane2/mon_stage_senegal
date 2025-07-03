@@ -5,14 +5,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+import time
 
-st.set_page_config(page_title="Orientation UCAD", layout="wide")
 
-st.title("\U0001F393 Orientation UCAD : Où vont les étudiants comme vous ?")
+with st.spinner("⏳ Cette page peut prendre un peu de temps à charger car nous téléchargeons une grande base de donnée. Veuillez patienter..." ):
+    time.sleep(3) # À remplacer par ton vrai traitemen
+st.title("📊 Statistiques d'Orientation UCAD") 
 st.markdown("""
 Si vous décidez de venir à l'UCAD, vous aurez à choisir un département de formation en Licence 1. 
 Cette application vous permet de **voir dans quels départements les étudiants comme vous ont été orientés l'année passée** et **quels sont les taux de réussite en L1**.
 """)
+
 
 @st.cache_data
 def load_and_clean_data():
@@ -83,7 +86,7 @@ st.sidebar.title("\U0001F4CB Vos informations")
 serie_bacc = st.sidebar.selectbox("Votre Série du Bac *", sorted(data['serie_clean'].dropna().unique()))
 annee_bacc = st.sidebar.selectbox("Votre année du Bac *", range(2021, 2025))
 nationalite = st.sidebar.selectbox("Nationalité *", ['SÉNÉGALAISE'] + sorted(data['nationalite'].dropna().unique()))
-mention_bacc = st.sidebar.selectbox("Mention que vous visez au bac", ['Indifférent'] + sorted(data['mention_bacc'].dropna().unique()))
+mention_bacc = st.sidebar.selectbox("Mention que vous visez au bac selon votre niveau", ['Indifférent'] + sorted(data['mention_bacc'].dropna().unique()))
 sexe = st.sidebar.selectbox("Votre sexe", data['sexe'].dropna().unique())
 
 if st.sidebar.button("\U0001F50D Voir les résultats"):
@@ -135,19 +138,23 @@ if st.sidebar.button("\U0001F50D Voir les résultats"):
         return meilleur['Département']
 
     reco = recommandation(stats_df)
+    #afficher lui des debouches potentiels
 
     st.markdown("### ✅ Recommandation personnalisée")
     st.success(f"""
     \U0001F3AF **D'après les parcours d'étudiants ayant un profil similaire au vôtre**, le département recommandé est :  
-    ### 👉 `{reco}`
+    ### 👉 `{reco}` 
 
     Ce choix repose sur une combinaison de critères :
     - ✅ Un **bon taux de réussite** en première année (L1)
     - 👥 Une **forte présence d'étudiants** issus de la même série, nationalité et mention que vous
     - \U0001F4CA Une **stabilité des performances** observées sur les années précédentes
-    """)
+    - ℹ️ Pour mieux choisir, **n'oubliez pas de consulter les débouchés liés à ce département**.
+        Cela peut vous aider à mieux comprendre les métiers accessibles et à projeter votre avenir professionnel.
+""")
 
     st.warning("⚠️ Note : Ces données sont basées sur les parcours d'étudiants précédents orientés à l'UCAD. Elles ne garantissent pas votre réussite dans un département spécifique.")
+
 
 else:
     st.info("Remplissez les champs à gauche et cliquez sur 'Voir les résultats'.")
