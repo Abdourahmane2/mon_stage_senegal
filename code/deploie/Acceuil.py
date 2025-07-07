@@ -1,11 +1,13 @@
+
 import streamlit as st
 
-st.set_page_config(page_title="Orientation UCAD", layout="wide")
+st.set_page_config(page_title="Orientation UCAD", layout="wide") 
+
 
 st.title("🎓 Orientation UCAD : Où vont les étudiants comme vous ?")
 
 st.markdown("""
-Bienvenue sur l'outil d'orientation de l'Université Cheikh Anta Diop (UCAD) !  
+Bienvenue sur l'outil d'aide  aux choix pour les élèves désirant s'inscrire à l'UCAD via Campusen !
 
 Ce service vous accompagne dans votre choix de département en Licence 1 selon votre profil et vos envies.
 
@@ -16,6 +18,7 @@ Ce service vous accompagne dans votre choix de département en Licence 1 selon v
 - 📍 **Explorer les départements les plus choisis** par les étudiants selon leurs profils.
 - 🧠 **Participer à un quiz d'orientation** pour mieux cerner vos intérêts et aptitudes.
 - 🤖 **Lancer une simulation personnalisée** pour visualiser vos options d'orientation.
+- 💼 **Voir les débouchés possibles** pour chaque département.
 
 ---
 
