@@ -10,7 +10,7 @@ import time
 
 with st.spinner("⏳ Cette page peut prendre un peu de temps à charger car nous téléchargeons une grande base de donnée. Veuillez patienter..." ):
     time.sleep(10) 
-st.title("📊 Statistiques d'Orientation UCAD") 
+st.title("Statistiques d'Orientation UCAD") 
 st.markdown("""
 Si vous décidez de venir à l'UCAD, vous aurez à choisir un département de formation en Licence 1. 
 Cette application vous permet de **voir dans quels départements les étudiants comme vous ont été orientés l'année passée** et **quels sont les taux de réussite en L1**.
@@ -119,10 +119,10 @@ if st.sidebar.button("\U0001F50D Voir les résultats"):
         })
     stats_df = pd.DataFrame(stats).sort_values("Étudiants", ascending=False).head(5)
 
-    st.markdown("### \U0001F3DB️ Top 5 des départements où vont les étudiants comme vous")
+    st.markdown("###  Top 5 des départements où vont les étudiants comme vous")
     st.dataframe(stats_df, use_container_width=True)
 
-    st.markdown("### \U0001F4C8 Taux de réussite dans ces départements")
+    st.markdown("###  Taux de réussite dans ces départements")
     fig, ax = plt.subplots(figsize=(8, 4))
     sns.barplot(data=stats_df, y="Département", x="Taux de réussite en L1 (%)", palette="Greens_d")
     ax.set_xlim(0, 100)
@@ -140,20 +140,20 @@ if st.sidebar.button("\U0001F50D Voir les résultats"):
     reco = recommandation(stats_df)
     #afficher lui des debouches potentiels
 
-    st.markdown("### ✅ Recommandation personnalisée")
+    st.markdown("### Recommandation personnalisée")
     st.success(f"""
     \U0001F3AF **D'après les parcours d'étudiants ayant un profil similaire au vôtre**, le département recommandé est :  
-    ### 👉 `{reco}` 
+    ###  `{reco}` 
 
     Ce choix repose sur une combinaison de critères :
-    - ✅ Un **bon taux de réussite** en première année (L1)
-    - 👥 Une **forte présence d'étudiants** issus de la même série, nationalité et mention que vous
-    - \U0001F4CA Une **stabilité des performances** observées sur les années précédentes
-    - ℹ️ Pour mieux choisir, **n'oubliez pas de consulter les débouchés liés à ce département**.
+    -  Un **bon taux de réussite** en première année (L1)
+    - Une **forte présence d'étudiants** issus de la même série, nationalité et mention que vous
+    -  Une **stabilité des performances** observées sur les années précédentes
+    -  Pour mieux choisir, **n'oubliez pas de consulter les débouchés liés à ce département**.
         Cela peut vous aider à mieux comprendre les métiers accessibles et à projeter votre avenir professionnel.
 """)
 
-    st.warning("⚠️ Note : Ces données sont basées sur les parcours d'étudiants précédents orientés à l'UCAD. Elles ne garantissent pas votre réussite dans un département spécifique.")
+    st.warning("Note : Ces données sont basées sur les parcours d'étudiants précédents orientés à l'UCAD. Elles ne garantissent pas votre réussite dans un département spécifique.")
 
 
 else:

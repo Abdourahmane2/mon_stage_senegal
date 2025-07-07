@@ -15,14 +15,14 @@ Ce service vous accompagne dans votre choix de département en Licence 1 selon v
 
 ### Que pouvez-vous faire ici ?
 
-- 📍 **Explorer les départements les plus choisis** par les étudiants selon leurs profils.
-- 🧠 **Participer à un quiz d'orientation** pour mieux cerner vos intérêts et aptitudes.
-- 🤖 **Lancer une simulation personnalisée** pour visualiser vos options d'orientation.
-- 💼 **Voir les débouchés possibles** pour chaque département.
+-  **Explorer les départements les plus choisis** par les étudiants selon leurs profils.
+-  **Participer à un quiz d'orientation** pour mieux cerner vos intérêts et aptitudes.
+-  **Lancer une simulation personnalisée** pour visualiser vos options d'orientation.
+-  **Voir les débouchés possibles** pour chaque département.
 
 ---
 
 Pour commencer, utilisez la barre latérale à gauche pour naviguer entre les différentes fonctionnalités.
 
-Bonne découverte et bon courage dans votre parcours ! 🚀
+Bonne découverte et bon courage dans votre parcours ! 
 """)

@@ -1,7 +1,7 @@
 import streamlit as st
 
-st.set_page_config(page_title="Quiz d'orientation UCAD", page_icon="🧠")
-st.title("🧠 **Quiz d'orientation** pour mieux cerner vos intérêts et aptitudes")
+st.set_page_config(page_title="Quiz d'orientation UCAD")
+st.title("**Quiz d'orientation** pour mieux cerner vos intérêts et aptitudes")
 
 st.markdown("""
 Bienvenue dans le quiz d'orientation de l'Université Cheikh Anta Diop (UCAD) !  
@@ -43,52 +43,52 @@ for i, question in enumerate(questions):
 if st.button("Valider les réponses"):
     st.success("Vos réponses ont été enregistrées ! 🎉")
 
-    st.subheader("📊 **Vos réponses**")
+    st.subheader(" **Vos réponses**")
     for i, response in enumerate(responses):
-        st.write(f"{questions[i]} 👉 {response}")
+        st.write(f"{questions[i]}  {response}")
 
     # ───── Suggestions de département ─────
-    st.subheader("📈 **Département suggéré**")
+    st.subheader(" **Département suggéré**")
 
     suggestion = ""
 
     if responses[0] == "Scientifique":
         if responses[1] in ["Mathématiques", "Physique / Chimie"] and responses[2] == "Résoudre des énigmes, faire des calculs":
-            suggestion = "💻 **Informatique, Génie logiciel, Data Science**"
+            suggestion = " **Informatique, Génie logiciel, Data Science**"
         elif responses[1] == "SVT / Biologie" and responses[3] == "Un hôpital ou une clinique":
-            suggestion = "🧬 **Médecine, Sciences de la santé**"
+            suggestion = " **Médecine, Sciences de la santé**"
         elif responses[2] == "Travailler avec mes mains":
-            suggestion = "🔧 **Génie mécanique, Électrotechnique**"
+            suggestion = " **Génie mécanique, Électrotechnique**"
         else:
-            suggestion = "🔬 **Sciences fondamentales ou ingénierie**"
+            suggestion = " **Sciences fondamentales ou ingénierie**"
 
     elif responses[0] == "Littéraire":
         if responses[2] == "Lire, écrire, débattre":
-            suggestion = "📚 **Lettres, Journalisme, Communication**"
+            suggestion = " **Lettres, Journalisme, Communication**"
         elif responses[2] == "Créer (dessin, musique, photo…)":
-            suggestion = "🎨 **Arts, Design graphique, Audiovisuel**"
+            suggestion = " **Arts, Design graphique, Audiovisuel**"
         else:
-            suggestion = "📝 **Langues, Histoire ou Philosophie**"
+            suggestion = " **Langues, Histoire ou Philosophie**"
 
     elif responses[0] == "Technique":
         if responses[1] == "Informatique / Technologie":
             if responses[2] == "Travailler avec mes mains":
-                suggestion = "🔌 **Réseaux, Électronique, Robotique**"
+                suggestion = " **Réseaux, Électronique, Robotique**"
             elif responses[2] == "Résoudre des énigmes, faire des calculs":
-                suggestion = "💾 **Développement web, Cybersécurité**"
+                suggestion = " **Développement web, Cybersécurité**"
             else:
-                suggestion = "⚙️ **Technologie industrielle, maintenance**"
+                suggestion = " **Technologie industrielle, maintenance**"
         else:
-            suggestion = "⚙️ **Formation technique spécialisée**"
+            suggestion = " **Formation technique spécialisée**"
 
     elif responses[0] == "Gestion":
         if responses[2] == "Voyager, découvrir d'autres cultures":
-            suggestion = "🌍 **Commerce international, Marketing**"
+            suggestion = " **Commerce international, Marketing**"
         else:
-            suggestion = "📊 **Comptabilité, Gestion, Management**"
+            suggestion = " **Comptabilité, Gestion, Management**"
 
     else:
-        suggestion = "❓ **Aucune correspondance exacte. Veuillez affiner vos réponses.**"
+        suggestion = " **Aucune correspondance exacte. Veuillez affiner vos réponses.**"
 
     # Affichage du département final
     st.success(f"Nous vous suggérons : {suggestion}")

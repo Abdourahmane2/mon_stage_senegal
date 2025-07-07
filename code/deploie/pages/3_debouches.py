@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Débouchés", page_icon="💼", layout="wide")
 
-st.title("💼 Débouchés des départements de formation à l'UCAD")
+st.title(" Débouchés des départements de formation à l'UCAD")
 
 st.markdown("""
 ### 🎓 Explorez les débouchés professionnels pour chaque département de formation à l'UCAD.
@@ -180,18 +180,18 @@ tabs = st.tabs(facultes)
 
 for i, faculte in enumerate(facultes):
     with tabs[i]:
-        st.header(f"🏛️ Faculté : {faculte}")
+        st.header(f" Faculté : {faculte}")
         st.markdown("Cliquez sur un département pour voir ses débouchés.")
         for nom_dept, debouches in departements[faculte].items():
-            with st.expander(f"📘 {nom_dept}"):
+            with st.expander(f"{nom_dept}"):
                 st.markdown("**Débouchés :**")
                 for metier in debouches:
                     st.markdown(f"- {metier}")
         if faculte in liens_facultes:
-            st.markdown(f"👉 [En savoir plus sur le site officiel de la {faculte}]({liens_facultes[faculte]})", unsafe_allow_html=True)                
+            st.markdown(f" [En savoir plus sur le site officiel de la {faculte}]({liens_facultes[faculte]})", unsafe_allow_html=True)                
 
 
-st.markdown("### 📌 Remarque importante")
+st.markdown("### Remarque importante")
 
 st.warning(""" ces liste ne représente pas l'intégralité des débouchés possibles.
 Consultez les sites officiels des facultés pour plus d'informations.""")
