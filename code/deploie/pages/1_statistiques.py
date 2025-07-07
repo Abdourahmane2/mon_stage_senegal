@@ -8,7 +8,7 @@ import numpy as np
 import time
 
 
-with st.spinner("⏳ Cette page peut prendre un peu de temps à charger car nous téléchargeons une grande base de donnée. Veuillez patienter..." ):
+with st.spinner(" Cette page peut prendre un peu de temps à charger car nous téléchargeons une grande base de donnée. Veuillez patienter..." ):
     time.sleep(10) 
 st.title("Statistiques d'Orientation UCAD") 
 st.markdown("""
@@ -82,14 +82,14 @@ def load_and_clean_data():
 
 data = load_and_clean_data()
 
-st.sidebar.title("\U0001F4CB Vos informations")
+st.sidebar.title(" Vos informations")
 serie_bacc = st.sidebar.selectbox("Votre Série du Bac *", sorted(data['serie_clean'].dropna().unique()))
 annee_bacc = st.sidebar.selectbox("Votre année du Bac *", range(2021, 2025))
 nationalite = st.sidebar.selectbox("Nationalité *", ['SÉNÉGALAISE'] + sorted(data['nationalite'].dropna().unique()))
 mention_bacc = st.sidebar.selectbox("Mention que vous visez au bac selon votre niveau", ['Indifférent'] + sorted(data['mention_bacc'].dropna().unique()))
 sexe = st.sidebar.selectbox("Votre sexe", data['sexe'].dropna().unique())
 
-if st.sidebar.button("\U0001F50D Voir les résultats"):
+if st.sidebar.button(" Voir les résultats"):
     filtered = data[
         (data['serie_clean'] == serie_bacc) &
         (data['annee_bacc'] == annee_bacc - 1) &
@@ -105,7 +105,7 @@ if st.sidebar.button("\U0001F50D Voir les résultats"):
         st.warning("Aucun étudiant correspondant trouvé. Essayez d’élargir vos critères.")
         st.stop()
 
-    st.success(f"\U0001F389 {nb_etudiants} étudiant(s) similaires trouvés.")
+    st.success(f" {nb_etudiants} étudiant(s) similaires trouvés.")
 
     stats = []
     for dept in filtered['departement_formation'].dropna().unique():

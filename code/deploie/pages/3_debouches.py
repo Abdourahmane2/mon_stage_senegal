@@ -1,11 +1,11 @@
 import streamlit as st
 
-st.set_page_config(page_title="Débouchés", page_icon="💼", layout="wide")
+st.set_page_config(page_title="Débouchés",  layout="wide")
 
 st.title(" Débouchés des départements de formation à l'UCAD")
 
 st.markdown("""
-### 🎓 Explorez les débouchés professionnels pour chaque département de formation à l'UCAD.
+###  Explorez les débouchés professionnels pour chaque département de formation à l'UCAD.
 Sélectionnez une faculté ci-dessous pour découvrir les possibilités.
 """)
 

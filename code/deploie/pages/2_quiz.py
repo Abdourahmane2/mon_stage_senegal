@@ -10,7 +10,7 @@ Répondez honnêtement aux questions pour obtenir une suggestion de département
 """)
 
 # ───── Questionnaire ─────
-st.subheader("🔍 **Questionnaire**")
+st.subheader(" **Questionnaire**")
 
 questions = [
     "1. Quelle est ta série actuelle ?",

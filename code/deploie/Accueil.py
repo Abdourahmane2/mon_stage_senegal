@@ -5,7 +5,7 @@ import streamlit as st
 st.set_page_config(page_title="Orientation UCAD", layout="wide") 
 
 
-st.title("🎓 Orientation UCAD : Où vont les étudiants comme vous ?")
+st.title("Orientation UCAD : Où vont les étudiants comme vous ?")
 
 
 
