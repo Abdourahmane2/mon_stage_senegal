@@ -7,10 +7,7 @@ st.set_page_config(page_title="Orientation UCAD", layout="wide")
 
 st.title("🎓 Orientation UCAD : Où vont les étudiants comme vous ?")
 
-pages = [f.replace(".py", "") for f in os.listdir("pages") if f.endswith(".py")]
 
-# Affichage avec noms en majuscules
-choix = st.sidebar.selectbox("Navigation", [page.upper() for page in pages])
 
 st.markdown("""
 Bienvenue sur l'outil d'aide  aux choix pour les élèves désirant s'inscrire à l'UCAD via Campusen !
