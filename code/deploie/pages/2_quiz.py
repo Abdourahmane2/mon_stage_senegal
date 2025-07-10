@@ -41,7 +41,7 @@ for i, question in enumerate(questions):
 
 # ───── Résultat ─────
 if st.button("Valider les réponses"):
-    st.success("Vos réponses ont été enregistrées ! 🎉")
+    st.success("Vos réponses ont été enregistrées ! ")
 
     st.subheader(" **Vos réponses**")
     for i, response in enumerate(responses):
