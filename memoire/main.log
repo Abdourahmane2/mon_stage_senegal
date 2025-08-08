@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.27)  25 JUN 2025 14:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.27)  8 AUG 2025 22:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -518,14 +518,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 31.
-<image/ucad.jpg, id=127, 475.7775pt x 477.785pt>
-File: image/ucad.jpg Graphic file (type jpg)
-<use image/ucad.jpg>
-Package pdftex.def Info: image/ucad.jpg  used on input line 41.
-(pdftex.def)             Requested size: 83.57793pt x 83.92711pt.
+<image/logo_ucad.jpeg, id=127, 262.9825pt x 275.0275pt>
+File: image/logo_ucad.jpeg Graphic file (type jpg)
+<use image/logo_ucad.jpeg>
+Package pdftex.def Info: image/logo_ucad.jpeg  used on input line 41.
+(pdftex.def)             Requested size: 83.57793pt x 87.40628pt.
  [1
 
-{C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc} <./image/icom.jpg> <./image/ucad.jpg>] (main.toc)
+{C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc} <./image/icom.jpg> <./image/logo_ucad.jpeg>] (main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -696,17 +696,53 @@ Overfull \hbox (11.32253pt too wide) in paragraph at lines 210--211
  []
 
 [19 <./image/14.png>]
-<image/15.png, id=291, 1112.35574pt x 540.8205pt>
-File: image/15.png Graphic file (type png)
-<use image/15.png>
-Package pdftex.def Info: image/15.png  used on input line 227.
-(pdftex.def)             Requested size: 472.03123pt x 229.49495pt.
-<image/16.png, id=292, 1099.10625pt x 546.843pt>
-File: image/16.png Graphic file (type png)
-<use image/16.png>
-Package pdftex.def Info: image/16.png  used on input line 228.
-(pdftex.def)             Requested size: 472.03123pt x 234.84586pt.
- [20 <./image/15.png>]) (conclusion.tex)) [21 <./image/16.png>] (main.aux)
+<image/17.png, id=291, 1109.3445pt x 525.162pt>
+File: image/17.png Graphic file (type png)
+<use image/17.png>
+Package pdftex.def Info: image/17.png  used on input line 234.
+(pdftex.def)             Requested size: 472.03123pt x 223.45934pt.
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 234--235
+ [] 
+ []
+
+[20 <./image/17.png>]
+<image/18.png, id=302, 1057.551pt x 434.22224pt>
+File: image/18.png Graphic file (type png)
+<use image/18.png>
+Package pdftex.def Info: image/18.png  used on input line 255.
+(pdftex.def)             Requested size: 472.03123pt x 193.81465pt.
+<image/19.png, id=303, 819.06pt x 377.61075pt>
+File: image/19.png Graphic file (type png)
+<use image/19.png>
+Package pdftex.def Info: image/19.png  used on input line 256.
+(pdftex.def)             Requested size: 472.03123pt x 217.62576pt.
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 255--257
+ [] 
+ []
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 255--257
+ [] 
+ []
+
+[21 <./image/18.png> <./image/19.png>]
+Overfull \hbox (1.48824pt too wide) in paragraph at lines 271--272
+[][]\OT1/lmr/m/n/12 A par-tir des r^^Seponses fournies, une **logique con-di-tion-nelle** int^^Segr^^See dans l'application
+ []
+
+<image/20.png, id=312, 884.103pt x 498.06075pt>
+File: image/20.png Graphic file (type png)
+<use image/20.png>
+Package pdftex.def Info: image/20.png  used on input line 294.
+(pdftex.def)             Requested size: 472.03123pt x 265.91647pt.
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 294--295
+ [] 
+ []
+
+[22]) (conclusion.tex)) [23 <./image/20.png>] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -715,17 +751,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 30DEA08EDF4540F4858FCACA4B3BC7E6;5663.
  ) 
 Here is how much of TeX's memory you used:
- 22629 strings out of 474486
- 445295 string characters out of 5745171
+ 22662 strings out of 474486
+ 445784 string characters out of 5745171
  1938542 words of memory out of 5000000
- 44497 multiletter control sequences out of 15000+600000
- 614673 words of font info for 65 fonts, out of 8000000 for 9000
+ 44515 multiletter control sequences out of 15000+600000
+ 618891 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,8n,87p,732b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (21 pages, 1453911 bytes).
+ 83i,8n,87p,646b,671s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (23 pages, 1541411 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 388 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 381 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 398 words of extra memory for PDF output out of 10000 (max. 10000000)
 

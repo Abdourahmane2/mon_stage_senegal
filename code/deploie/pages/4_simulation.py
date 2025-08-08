@@ -1,4 +1,9 @@
 import streamlit as st
+
+#cette fonctionnalité n'est pas encore disponible
+
+st.warning("Cette fonctionnalité n'est pas encore disponible. Veuillez revenir plus tard.") 
+
 st.set_page_config(page_title="Simulation d'Orientation UCAD")
 st.title(" Lancer une simulation personnalisée pour visualiser vos options d'orientation.")
 st.markdown("""

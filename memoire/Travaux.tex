@@ -219,18 +219,84 @@ Les résultats sont satisfaisant et montrent que le modèle proposé est plus fi
 Pour avoir un model plus performant et utilisable  les chercheurs envisagent de collecter plus de données sur les étudiants, notamment des données sur leur parcours académique antérieurs , intégrer des variables socio-économiques et psychologiques et enfin Finaliser et déployer une plateforme d'orientation intelligente pour l'enseignement supérieur sénégalais. 
 Malheureusement je ne dispose je ne dispose pas des données nécessaire pour reproduire cette etude afin d'apporter des améliorations.
 \subsection{Modèle de machine learning}  
-Notre but est d'aider les lycéens a choisir leur orientation dans l'enseignement supérieur. Pour cela nous avons utilise des anciens donnes des anciens étudiants inscrits a l'université et leur résultats pour construire un modèle robuste qui permettait aux étudiant de mieux choisir leur départements ou ils auront le plus de chance de réussir.  Malheureusement le modelé ne donnait pas de résultats performants car il n'y avait pas assez de données sur les étudiants, notamment des données sur leur parcours académique antérieur, leurs résultats aux examens, leurs intérêts et leurs compétences.
-Nous avons trouve une alternative pour aider les étudiants a mieux choisir les départements de formation  est de créer une plateforme stremalite et on demande aux étudiants de renseigner leur série de bac leur mention leur année de bac et la mention qu'il vise au bac selon leur niveau Ensuite on les redirige vers un tableau de bord qui leur permet de voir les statistiques des étudiants ayant le même profil qu'eux et les résultats obtenus par ces étudiants.
-Cette plateforme permet aux étudiants de mieux comprendre les tendances et les variations saisonnières des résultats des étudiants, et de mieux choisir leur orientation dans l'enseignement supérieur.
-voici un aperçu de la plateforme :
+Notre objectif est d'aider les lycéens à mieux s'orienter vers les filières universitaires où ils auront les meilleures chances de réussite.
+Pour cela, nous avons initialement tenté de construire un modèle de machine learning en utilisant les données d'anciens étudiants inscrits à l'université. Malheureusement, ce modèle s'est révélé peu performant en raison d'un manque de données détaillées sur le parcours académique, les résultats aux examens, les centres d'intérêt et les compétences des étudiants.
+Pour pallier à cette limitation, nous avons opté pour une solution alternative : la création d'une plateforme interactive développée avec Streamlit.
+Cette plateforme permet aux futurs étudiants de visualiser les tendances de réussite, les parcours des anciens étudiants et de mieux comprendre les variations saisonnières des résultats académiques. 
+Elle comporte plusieurs fonctionnalités, notamment :
+\begin{enumerate}
+    \item\textbf{Page d'accueil} : 
+    
+    Cette page présente une introduction à la plateforme et ses objectifs.
+    Elle présente les différentes fonctionnalités disponibles.
+    voici un aperçu de la page d'accueil :
+    \begin{center}
+        \includegraphics[width=1\textwidth]{image/17.png} 
+    \end{center}
+    \item\textbf{Statistiques générales} :
+
+    Cette page présente des statistiques générales sur les étudiants de l'Université Cheikh Anta Diop (UCAD), plus précisément sur les étudiants nouvellement orientés en Licence 1.
+   L'utilisateur sélectionne ses propres caractéristiques dans une barre latérale : série de Bac, année du Bac, nationalité, mention visée, sexe. Une fois les critères saisis, l'application :
+
+\begin{enumerate}
+    \item Filtre automatiquement les données issues des années précédentes (base de données disponible sur GitHub)
+    \item Affiche le top 5 des départements les plus fréquentés par les étudiants au profil similaire
+    \item Calcule et présente les taux de réussite en L1 dans ces départements
+    \item Recommande un département optimal en fonction de plusieurs facteurs :
+    \begin{itemize}
+        \item Le taux de réussite observé
+        \item Le nombre d'étudiants ayant un profil similaire
+        \item La moyenne annuelle obtenue dans ces départements
+    \end{itemize}
+\end{enumerate} 
+   cette page permet aux étudiants de mieux comprendre les tendances de réussite dans les différents départements et de faire un choix éclairé sur leur orientation universitaire.
+   voici une capture d'écran de la page des statistiques générales :
+   \begin{center}
+        \includegraphics[width=1\textwidth]{image/18.png}
+        \includegraphics[width=1\textwidth]{image/19.png} 
+    \end{center}
+    \item \textbf{Quiz d'orientation} :
+    
+    Cette page propose un quiz interactif permettant d'orienter les futurs étudiants de l'UCAD en fonction de leurs **intérêts, préférences scolaires et aspirations professionnelles**. Contrairement à la page précédente qui repose sur des données statistiques historiques. 
+\vspace{0.3cm}
+Le quiz comprend plusieurs questions simples, réparties selon quatre grands axes :
+\begin{itemize}
+    \item \textbf{Série actuelle du candidat} (Scientifique, Littéraire, Technique, Gestion)
+    \item \textbf{Matière préférée au lycée}
+    \item \textbf{Activité préférée} (résoudre des énigmes , aider ou ecouter les autres  ...)
+    \item \textbf{Environnement de travail idéal} (hôpital, laboratoire, ...)
+\end{itemize}
+
+\vspace{0.3cm}
+À partir des réponses fournies, une **logique conditionnelle** intégrée dans l'application Streamlit suggère un ou plusieurs départements universitaires adaptés. Par exemple :
+\begin{itemize}
+    \item Un élève scientifique aimant les mathématiques et la résolution de problèmes se verra proposer les filières \textit{Informatique, Data Science ou Génie logiciel}.
+    \item Un profil littéraire aimant lire et débattre sera orienté vers les \textit{Lettres, le Journalisme ou la Communication}.
+    \item Un élève technique passionné par les mains ou la technologie se verra recommander \textit{la robotique ou les réseaux informatiques}.
+\end{itemize}
+\item \textbf{Débouchés par département} :
+
+Cette page permet aux utilisateurs d'explorer les principaux débouchés associés aux différents départements de formation à l'UCAD. L'interface est organisée par faculté (FSJP, FST, FLSH, FMPOS) et offre, pour chaque département, une liste des métiers possibles après la formation.
+
+Les débouchés sont affichés sous forme de listes dynamiques, accessibles via des menus déroulants. Un lien vers le site officiel de chaque faculté est également intégré pour permettre d'obtenir plus d'informations sur les parcours proposés.
+
+Cette fonctionnalité a pour but d'aider les étudiants à mieux se projeter professionnellement, en comprenant les perspectives offertes par chaque domaine d'étude.  
+\item \textbf{Simulation } :
+cette page permet aux lycéens de simuler leur parcours universitaire en fonction de leur profil.
+\begin{enumerate}
+    \item L'utilisateur pourra choisir un département de formation.
+    \item Le système analysera ses caractéristiques (série du bac, mention, sexe, etc.).
+    \item Une estimation du risque de redoublement sera affichée sous forme de niveau : **Faible**, **Moyen**, ou **Élevé**. 
+\end{enumerate}
+
+Cependant, cette fonctionnalité **n'est pas encore disponible dans l'application**, car nous sommes encore **en phase de collecte et de traitement des données nécessaires**. Une fois cette étape terminée, un modèle prédictif pourra être implémenté pour fournir des résultats fiables.
 \begin{center}
-    \includegraphics[width=1\textwidth]{image/15.png}
-    \includegraphics[width=1\textwidth]{image/16.png}
+    \includegraphics[width=1\textwidth]{image/20.png} 
 \end{center}
-\textcolor{red}{\faInfoCircle}\textbf{Conclusion :} 
-Meme avec cette solution nous avons voulu rajouter d'autres donnes comme le nombre de personnes qui ont fait les demandes d'orientation et le nombre de personnes qui ont été orientées dans chaque département, mais malheureusement nous n'avons pas pu obtenir ces données. 
-Nous avons donc décidé de nous concentrer sur les données disponibles et de créer une plateforme qui permet aux étudiants de mieux comprendre les tendances et les variations saisonnières des résultats des étudiants, et de mieux choisir leur orientation dans l'enseignement supérieur.
-Cette plateforme permet aux étudiants de mieux comprendre les tendances et les variations saisonnières des résultats des étudiants, et de mieux choisir leur orientation dans l'enseignement supérieur.
+
+
+\end{enumerate} 
+
 
 
 
