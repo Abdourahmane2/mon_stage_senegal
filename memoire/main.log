@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.27)  8 AUG 2025 22:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.27)  17 AUG 2025 12:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -695,73 +695,73 @@ Overfull \hbox (11.32253pt too wide) in paragraph at lines 210--211
 [][]\U/fontawesomefree1/solid/n/12 ò[]\OT1/lmr/bx/n/12 Remarque : \OT1/lmr/m/n/12 Cette ^^Setape de fu-sion est cru-ciale pour garan-tir la coh^^Serence et l'exhaustivit^^Se
  []
 
-[19 <./image/14.png>]
-<image/17.png, id=291, 1109.3445pt x 525.162pt>
+<image/17.png, id=285, 1109.3445pt x 525.162pt>
 File: image/17.png Graphic file (type png)
 <use image/17.png>
-Package pdftex.def Info: image/17.png  used on input line 234.
+Package pdftex.def Info: image/17.png  used on input line 224.
 (pdftex.def)             Requested size: 472.03123pt x 223.45934pt.
 
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 234--235
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 224--225
+ [] 
+ []
+
+[19 <./image/14.png>]
+<image/18.png, id=293, 1057.551pt x 434.22224pt>
+File: image/18.png Graphic file (type png)
+<use image/18.png>
+Package pdftex.def Info: image/18.png  used on input line 245.
+(pdftex.def)             Requested size: 472.03123pt x 193.81465pt.
+<image/19.png, id=294, 819.06pt x 377.61075pt>
+File: image/19.png Graphic file (type png)
+<use image/19.png>
+Package pdftex.def Info: image/19.png  used on input line 246.
+(pdftex.def)             Requested size: 472.03123pt x 217.62576pt.
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 245--247
+ [] 
+ []
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 245--247
  [] 
  []
 
 [20 <./image/17.png>]
-<image/18.png, id=302, 1057.551pt x 434.22224pt>
-File: image/18.png Graphic file (type png)
-<use image/18.png>
-Package pdftex.def Info: image/18.png  used on input line 255.
-(pdftex.def)             Requested size: 472.03123pt x 193.81465pt.
-<image/19.png, id=303, 819.06pt x 377.61075pt>
-File: image/19.png Graphic file (type png)
-<use image/19.png>
-Package pdftex.def Info: image/19.png  used on input line 256.
-(pdftex.def)             Requested size: 472.03123pt x 217.62576pt.
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 255--257
- [] 
- []
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 255--257
- [] 
- []
-
-[21 <./image/18.png> <./image/19.png>]
-Overfull \hbox (1.48824pt too wide) in paragraph at lines 271--272
+Overfull \hbox (1.48824pt too wide) in paragraph at lines 261--262
 [][]\OT1/lmr/m/n/12 A par-tir des r^^Seponses fournies, une **logique con-di-tion-nelle** int^^Segr^^See dans l'application
  []
 
+[21 <./image/18.png> <./image/19.png>]
 <image/20.png, id=312, 884.103pt x 498.06075pt>
 File: image/20.png Graphic file (type png)
 <use image/20.png>
-Package pdftex.def Info: image/20.png  used on input line 294.
+Package pdftex.def Info: image/20.png  used on input line 284.
 (pdftex.def)             Requested size: 472.03123pt x 265.91647pt.
 
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 294--295
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 284--285
  [] 
  []
 
-[22]) (conclusion.tex)) [23 <./image/20.png>] (main.aux)
+[22]) (bilan.tex) (conclusion.tex [23 <./image/20.png>])) [24] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 30DEA08EDF4540F4858FCACA4B3BC7E6;5663.
+(rerunfilecheck)             Checksum: DF19BB5E96DF2C6E9F86E509CB7458AA;5572.
  ) 
 Here is how much of TeX's memory you used:
- 22662 strings out of 474486
- 445784 string characters out of 5745171
+ 22669 strings out of 474486
+ 445902 string characters out of 5745171
  1938542 words of memory out of 5000000
- 44515 multiletter control sequences out of 15000+600000
+ 44518 multiletter control sequences out of 15000+600000
  618891 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,8n,87p,646b,671s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,8n,87p,646b,607s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (23 pages, 1541411 bytes).
+Output written on main.pdf (24 pages, 1541238 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
+ 385 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
  398 words of extra memory for PDF output out of 10000 (max. 10000000)
 
